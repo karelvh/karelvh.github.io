@@ -1,0 +1,90 @@
+//GLITCH ANIMATION HEADER (FROM CODEPEN)
+@mixin keyframes($animation-name) {
+   @-webkit-keyframes #{$animation-name} {
+      @content;
+   }
+   @-moz-keyframes #{$animation-name} {
+      @content;
+   }
+   @-ms-keyframes #{$animation-name} {
+      @content;
+   }
+   @-o-keyframes #{$animation-name} {
+      @content;
+   }
+   @keyframes #{$animation-name} {
+      @content;
+   }
+}
+
+@mixin animation($str) {
+   -webkit-animation: #{$str};
+   -moz-animation: #{$str};
+   -ms-animation: #{$str};
+   -o-animation: #{$str};
+   animation: #{$str};
+}
+
+@include keyframes(glitch-anim){
+   $steps:15;
+   @for $i from 0 through $steps{
+      #{percentage($i*(1/$steps))}{
+         clip:rect(random(200)+px,9999px,random(200)+px,0);
+      }
+   }
+}
+.glitch:after{
+   content:attr(data-text);
+   position:absolute;
+   left:1px;
+   text-shadow:-1px 0 red;
+   top:10px;
+   color:white;
+   overflow:hidden;
+   clip:rect(0,900px,0,0);
+   @include animation('glitch-anim 2s infinite linear alternate-reverse');
+   -webkit-animation-delay: 7s;
+   animation-delay: 7s;
+   @media screen and (max-width: $break-small) {
+      -webkit-animation: none !important;
+      -moz-animation: none !important;
+      -o-animation: none !important;
+      -ms-animation: none !important;
+      animation: none !important;
+   }
+   @media screen and (min-width: $break-large){
+      top: 13px;
+   }
+}
+
+@include keyframes(glitch-anim-2){
+   $steps:15;
+   @for $i from 0 through $steps{
+      #{percentage($i*(1/$steps))}{
+         clip:rect(random(200)+px,9999px,random(200)+px,0);
+      }
+   }
+}
+.glitch:before{
+   content:attr(data-text);
+   position:absolute;
+   left:-1px;
+   text-shadow:1px 0 blue;
+   top:10px;
+   color:white;
+   overflow:hidden;
+   clip:rect(0,900px,0,0);
+   @include animation('glitch-anim-2 3s infinite linear alternate-reverse');
+   -webkit-animation-delay: 5s;
+   animation-delay: 5s;
+   @media screen and (max-width: $break-small) {
+      -webkit-animation: none !important;
+      -moz-animation: none !important;
+      -o-animation: none !important;
+      -ms-animation: none !important;
+      animation: none !important;
+   }
+   @media screen and (min-width: $break-large){
+      top: 13px;
+   }
+}
