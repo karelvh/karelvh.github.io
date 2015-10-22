@@ -1,7 +1,14 @@
 @import "variables.scss";
+@import "fonts.scss";
+
+//PAGE STYLING
 @import "styling-home.scss";
+@import "styling-error.scss";
+
+//ANIMATIONS
 //@import "animation-glitch-header.scss";
 @import "animation-links-home.scss";
 //@import "tooltip.scss";
-@import "fonts.scss";
+
+//DEBUGGING
 //@import "debug.scss";
