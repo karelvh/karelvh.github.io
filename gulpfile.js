@@ -40,8 +40,8 @@ gulp.task("style-build", function () {
       .pipe(csslint.reporter())
       .pipe(sourcemaps.init())
       .pipe(autoprefixer())
-      .pipe(concat("main.min.css"))
       .pipe(cssMinifier())
+      .pipe(concat("main.min.css"))
       .pipe(sourcemaps.write())
       .pipe(gulp.dest("./dist/css"))
       .pipe(notify({message: 'stylesheet built'}));
