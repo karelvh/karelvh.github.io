@@ -42,7 +42,8 @@ gulp.task("style-build", function () {
       .pipe(autoprefixer())
       .pipe(cssMinifier())
       .pipe(concat("main.min.css"))
-      .pipe(sourcemaps.write())
+      //disable for deployment
+      //.pipe(sourcemaps.write())
       .pipe(gulp.dest("./dist/css"))
       .pipe(notify({message: 'stylesheet built'}));
 });
