@@ -1,0 +1,117 @@
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:800,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+//variables
+//COLORS
+$color-main: #ffffff;
+$color-background: #f3f3f3;
+$color-background-2: #202B37;
+$color-text: #131313;
+$color-text-2: #FFF700;
+//SCREEN SIZES
+$screen-medium: 1024px;
+$screen-small: 600px;
+$screen-xs: 370px;
+//FONT SIZES
+//These font sizes are based upon a 3:4, or .75 scale. Each font size is approximately 75% the size of the larger font size.
+$font-small: 16px;
+$font-medium: 21px;
+$font-big: 28px;
+$font-bigger: 37px;
+$font-huge: 50px;
+
+//RULE ON CLASS NAMES: block--element_modifier:state::before, with '-' between words of a class name.
+//LIKE SO:
+//menu-login--item-button:hover, menu-login--item_hidden, menu--item_error
+
+
+//PAGE STYLING
+html, body{
+   height: 100%;
+   font-family: "Oswald", sans-serif;
+   font-size: $font-small;
+   margin: 0;
+}
+html {
+   box-sizing: border-box;
+   position: relative;
+   min-height: 100%
+}
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+body {
+   background-color: $color-background;
+   color: $color-text;
+   // text-transform: uppercase;
+}
+
+p{
+   margin: 0 10px 10px 10px;
+   font-weight: bold;
+}
+.hi{
+   min-height: 800px;
+   height: 100vh;
+   font-size: 800px;
+   // font-size: 60px;
+   display: flex;
+   align-items: center;
+   // justify-content: center;
+   @media screen and (max-width: $screen-medium) {
+      min-height: 200px;
+      font-size: 200px;
+      height: 50vh;
+   }
+}
+.name{
+   margin-left: 50px;
+   font-size: 100px;
+   // font-size: 50px;
+   // display: flex;
+   align-items: center;
+   justify-content: center;
+   @media screen and (max-width: $screen-medium) {
+      font-size: 50px;
+      margin-left: 20px;
+   }
+}
+.contact{
+   margin-left: 50px;
+   font-size: 80px;
+   // font-size: 50px;
+   // display: flex;
+   align-items: center;
+   justify-content: center;
+   @media screen and (max-width: $screen-medium) {
+      display: block;
+      font-size: 30px;
+      margin-left: 20px;
+   }
+}
+.links{
+   margin-left: 50px;
+   font-size: 80px;
+   // font-size: 50px;
+   // display: flex;
+   align-items: center;
+   justify-content: center;
+   @media screen and (max-width: $screen-medium) {
+      display: block;
+      font-size: 30px;
+      margin-left: 20px;
+   }
+   a{
+      margin-left: 0;
+   }
+}
+a{
+   // margin-left: 15px;
+   color: inherit;
+}
+
+// .site-content{
+//    height: 90vh;
+//    margin: 30px;
+//    background-color: white;
+//    box-shadow: 0 13px 20px rgba(0,0,0,0.19), 0 6px 60px rgba(0,0,0,0.23);
+// }
