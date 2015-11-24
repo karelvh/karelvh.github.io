@@ -12,7 +12,7 @@ var gulp = require("gulp"),
    autoprefixer = require("gulp-autoprefixer");
 
 gulp.task("default", function(){
-   var styleWatcher = gulp.watch("./css/*.scss", ["style-build"]);
+   var styleWatcher = gulp.watch("./css/*.scss", ["css-build"]);
    styleWatcher.on("change", function(event){});
 
    var jsWatcher = gulp.watch("./js/*.js", ["js-build"]);
@@ -26,13 +26,14 @@ gulp.task("js-build", function(){
       .pipe(sourcemaps.init())
       .pipe(concat("app.min.js"))
       .pipe(sourcemaps.write())
+      //enable uglify before deployment
       .pipe(uglify())
       .pipe(gulp.dest('./dist/js'))
       .pipe(notify({message: 'js built'}));
 });
 
-gulp.task("style-build", function () {
-   gulp.src("./css/main.scss")
+gulp.task("css-build", function () {
+   gulp.src("./css/*.scss")
       .pipe(sass().on('error', sass.logError))
       .pipe(csslint({
          'ids': false
@@ -40,10 +41,10 @@ gulp.task("style-build", function () {
       .pipe(csslint.reporter())
       .pipe(sourcemaps.init())
       .pipe(autoprefixer())
-      .pipe(cssMinifier())
       .pipe(concat("main.min.css"))
-      //disable for deployment
-      //.pipe(sourcemaps.write())
+      .pipe(sourcemaps.write())
+      //enable minifier before deployment
+      .pipe(cssMinifier())
       .pipe(gulp.dest("./dist/css"))
       .pipe(notify({message: 'stylesheet built'}));
 });
