@@ -19,7 +19,7 @@ gulp.task("default", function(){
    jsWatcher.on("change", function(){});
 });
 
-gulp.task("js-build", function(){
+gulp.task("js", function(){
    gulp.src("./js/*.js")
       //.pipe(jshint())
       //.pipe(jshint.reporter(jsStylish))
@@ -32,7 +32,7 @@ gulp.task("js-build", function(){
       .pipe(notify({message: 'js built'}));
 });
 
-gulp.task("css-build", function () {
+gulp.task("css", function () {
    gulp.src("./css/*.scss")
       .pipe(sass().on('error', sass.logError))
       .pipe(csslint({

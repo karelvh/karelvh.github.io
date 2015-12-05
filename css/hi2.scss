@@ -1,0 +1,108 @@
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:800,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+//COLORS
+$color-main: #ff5a5f;
+$color-head: #2C3E50;
+$color-head-dark: #202b37;
+$color-background: #ffffff;
+$color-footer: rgba(#8a959e, 0.53);
+// $color-background: #F3F3F2;
+//SCREEN SIZES
+$break-large: 1500px;
+$break-medium: 1024px;
+$break-small: 600px;
+$break-small2: 601px;
+$break-xs: 370px;
+//FONT SIZES
+//These font sizes are based upon a 3:4, or .75 scale. Each font size is approximately 75% the size of the larger font size.
+$font-xs: 9px;
+$font-smaller: 12px;
+$font-small: 16px;
+$font-medium: 21px;
+$font-big: 28px;
+$font-bigger: 37px;
+$font-huge: 50px;
+$font-xl: 66px;
+$font-xxl: 88px;
+
+//RULE ON CLASS NAMES: block--element_modifier:state::before, with '-' between words of a class name.
+//LIKE SO:
+//menu-login--item-button:hover, menu-login--item_hidden, menu--item_error
+
+//PAGE STYLING
+html, body{
+    height: 100%;
+    font-family: "Oswald", sans-serif;
+    // font-size: $font-small;
+    margin: 0;
+}
+html {
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100%;
+    // font-size: 62.5%;
+    font-size: $font-small;
+    // min-width: 680px;
+    min-width: 520px;
+    max-width: 810px;
+
+
+    @media screen and (max-width: 690px){
+        font-size: $font-smaller;
+        max-width: 500px;
+    }
+    @media screen and (min-width: 910px){
+        font-size: $font-medium;
+        max-width: 1000px;
+    }
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: $color-background;
+    color: $color-head-dark;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+    float: left;
+}
+
+.p--hi {
+    font-size: 29.0rem;
+}
+.p--there {
+    transform: rotate(90deg);
+    font-size: 10.6rem;
+    margin-top: 14rem;
+    margin-left: -8rem;
+}
+.p--welcome {
+    font-size: 8.6rem;
+    margin-top: -9.5rem;
+    margin-left: 1.5rem;
+}
+.p--to {
+    font-size: 14rem;
+    margin-left: 1.4rem;
+    margin-top: -5.5rem;
+}
+.p--my {
+    font-size: 14rem;
+    margin-left: 1.7rem;
+    margin-top: -5.5rem;
+}
+.p--personal {
+    font-size: 8rem;
+    margin-left: 1rem;
+    margin-top: -5rem;
+}
+.p--site {
+    font-size: 19.8rem;
+    margin-left: 1rem;
+    margin-top: -6.5rem;
+}
