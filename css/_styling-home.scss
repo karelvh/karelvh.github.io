@@ -121,6 +121,7 @@ li {
   margin-top: .5em;
   font-size: $font-small;
   border-radius: 2px;
+  text-transform: capitalize;
 
   @media screen and (min-width: $break-small2) {
      left: 50%;

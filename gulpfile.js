@@ -12,10 +12,10 @@ var gulp = require("gulp"),
    autoprefixer = require("gulp-autoprefixer");
 
 gulp.task("default", function(){
-   var styleWatcher = gulp.watch("./css/*.scss", ["css-build"]);
+   var styleWatcher = gulp.watch("./css/*.scss", ["css"]);
    styleWatcher.on("change", function(event){});
 
-   var jsWatcher = gulp.watch("./js/*.js", ["js-build"]);
+   var jsWatcher = gulp.watch("./js/*.js", ["js"]);
    jsWatcher.on("change", function(){});
 });
 
