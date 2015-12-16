@@ -1,6 +1,8 @@
 var nightmodeEnabled = 0;
 var clock = document.getElementById('clock');
 
+document.addEventListener("keypress", nightmode);
+
 function nightmode(event) {
    var keyCode = event.which || event.keyCode;
    // if 'n' (night) is pressed
@@ -18,7 +20,6 @@ function nightmode(event) {
    }
 }
 
-var currentTime = new Date().getHours();
 if (7 <= currentTime && currentTime < 19) {
    document.body.style.backgroundColor = "#ffffff";
    clock.style.color = "#202b37";
