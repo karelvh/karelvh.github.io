@@ -1,19 +1,22 @@
 //normalize
-@import "normalize.scss";
+@import "normalize";
 
 //variables
-@import "variables.scss";
-@import "fonts.scss";
+@import "variables";
+@import "fonts";
 
 //PAGE STYLING
-@import "styling-home.scss";
-@import "styling-error.scss";
-// @import "hi.scss";
+@import "html-body";
+@import "page--index";
+@import "page--404";
+@import "footer";
+// @import "hi";
 
 //ANIMATIONS
-//@import "animation-glitch-header.scss";
-@import "animation-links-home.scss";
-//@import "tooltip.scss";
+@import "_animation--links_hover";
+//@import "animation--header_glitch";
+//@import "animation--links_fade-in";
+//@import "tooltip";
 
 //DEBUGGING
-//@import "debug.scss";
+//@import "debug";

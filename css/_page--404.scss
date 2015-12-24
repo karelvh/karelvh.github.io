@@ -1,0 +1,13 @@
+.error--body {
+    margin: 20px;
+
+    a {
+       color: $color-main;
+    }
+
+    .mario {
+        width: 95vw;
+        height: 58px;
+        background-image: url(../img/mario.gif);
+    }
+}

@@ -1,0 +1,32 @@
+html, body {
+   height: 100%;
+   font-family: "Helvetica", sans-serif;
+   font-size: $font-medium;
+   text-transform: uppercase;
+   font-weight: 700;
+   margin: 0;
+   letter-spacing: 1px;
+
+   @media screen and (min-width: $break-medium) {
+      font-family: "Lato", "Helvetica", sans-serif;
+      // font-weight: 700;
+      letter-spacing: 3px;
+   }
+}
+html {
+   box-sizing: border-box;
+}
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+body {
+   color: $color-main;
+   background-color: $color-background;
+   transition: background-color 1s ease;
+}
+
+::selection{
+   background: $color-white;
+   background: rgba($color-main, .2);
+}

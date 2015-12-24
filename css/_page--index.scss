@@ -1,0 +1,112 @@
+//INDEX PAGE STYLING
+.site {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+
+.site--header,
+.site--footer {
+   flex: none;
+}
+
+.site--content {
+   flex: 1 0 auto;
+   width: 100%;
+}
+
+.links--ul {
+   color: #2C3E50;
+   padding: 0.2em 0;
+   position: relative;
+   left: 50%;
+   text-align: center;
+   max-width: 8em;
+   height: 7*1.8em;
+   margin: 0;
+   margin-left: -4em;
+   margin-top: 1em;
+   font-size: $font-bigger;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   // font-size: $font-small;
+
+   @media screen and (min-width: $break-large){
+      font-size: $font-huge;
+   }
+}
+
+li {
+   list-style: none;
+   // padding: .1em;
+   font-weight: 700;
+   margin-bottom: .4em;
+}
+
+.site--header {
+   background-color: $color-head-dark;
+   color: #ffffff;
+   padding: 0.2em 0;
+   position: relative;
+   text-align: center;
+   max-width: 9em;
+   // height: 2.5em;
+   margin: 0;
+   margin-top: 1em;
+   font-size: $font-huge;
+   border-radius: 2px;
+
+   @media screen and (min-width: $break-small2) {
+      left: 50%;
+      margin-left: -4.5em;
+   }
+
+   @media screen and (max-width: $break-small) {
+      font-size: 45px;
+      max-width: 100%;
+      margin: 13px 13px 0 13px;
+   }
+
+   @media screen and (max-width: $break-xs) {
+      font-size: 40px;
+   }
+
+   @media screen and (min-width: $break-large){
+      font-size: $font-xl;
+   }
+}
+
+#clock{
+  color: $color-head-dark;
+  padding: 0.2em 0;
+  position: relative;
+  text-align: center;
+  max-width: 16em;
+  // height: 2.5em;
+  margin: 0;
+  margin-top: .5em;
+  font-size: $font-small;
+  border-radius: 2px;
+  text-transform: capitalize;
+
+  @media screen and (min-width: $break-small2) {
+     left: 50%;
+     margin-left: -8em;
+  }
+
+  @media screen and (max-width: $break-small) {
+     font-size: $font-small;
+     max-width: 100%;
+     margin: 13px 13px 0 13px;
+  }
+
+  @media screen and (max-width: $break-xs) {
+     font-size: $font-smaller;
+  }
+
+  @media screen and (min-width: $break-large){
+     font-size: $font-medium;
+  }
+}
