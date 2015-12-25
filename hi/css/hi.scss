@@ -2,11 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
 //variables
 //COLORS
-$color-main: #ffffff;
 $color-white: #ffffff;
-$color-background: #f3f3f3;
-$color-background-2: #202B37;
 $color-text: #131313;
+$color-text-3: #202533;
 $color-text-2: #FFF700;
 //SCREEN SIZES
 $screen-medium: 1024px;
@@ -42,7 +40,7 @@ html {
 }
 body {
    background-color: $color-white;
-   color: $color-text;
+   color: $color-text-3;
    // text-transform: uppercase;
 }
 
@@ -54,10 +52,8 @@ p{
    min-height: 800px;
    height: 100vh;
    font-size: 800px;
-   // font-size: 60px;
    display: flex;
    align-items: center;
-   // justify-content: center;
    @media screen and (max-width: $screen-medium) {
       min-height: 200px;
       font-size: 200px;
@@ -67,8 +63,6 @@ p{
 .name{
    margin-left: 50px;
    font-size: 100px;
-   // font-size: 50px;
-   // display: flex;
    align-items: center;
    justify-content: center;
    @media screen and (max-width: $screen-medium) {
@@ -79,8 +73,6 @@ p{
 .contact{
    margin-left: 50px;
    font-size: 80px;
-   // font-size: 50px;
-   // display: flex;
    align-items: center;
    justify-content: center;
    @media screen and (max-width: $screen-medium) {
@@ -92,8 +84,6 @@ p{
 .links{
    margin-left: 50px;
    font-size: 80px;
-   // font-size: 50px;
-   // display: flex;
    align-items: center;
    justify-content: center;
    @media screen and (max-width: $screen-medium) {
@@ -106,13 +96,5 @@ p{
    }
 }
 a{
-   // margin-left: 15px;
    color: inherit;
 }
-
-// .site-content{
-//    height: 90vh;
-//    margin: 30px;
-//    background-color: white;
-//    box-shadow: 0 13px 20px rgba(0,0,0,0.19), 0 6px 60px rgba(0,0,0,0.23);
-// }
