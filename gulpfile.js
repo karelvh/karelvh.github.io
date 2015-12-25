@@ -11,6 +11,10 @@ var gulp = require("gulp"),
    sass = require("gulp-sass"),
    autoprefixer = require("gulp-autoprefixer");
 
+//////////////////////////////
+//////index page tasks ///////
+//////////////////////////////
+// change the tasks to whatever page you're currently working on
 gulp.task("default", function(){
    var styleWatcher = gulp.watch("./index/css/*.scss", ["css"]);
    styleWatcher.on("change", function(event){});
@@ -22,7 +26,6 @@ gulp.task("default", function(){
 //////////////////////////////
 //////index page tasks ///////
 //////////////////////////////
-
 gulp.task("index", function(){
    var styleWatcher = gulp.watch("./index/css/*.scss", ["index-css"]);
    styleWatcher.on("change", function(event){});
@@ -64,7 +67,6 @@ gulp.task("index-css", function () {
 //////////////////////////////
 /////// hi page tasks ////////
 //////////////////////////////
-
 gulp.task("hi", function(){
    var styleWatcher = gulp.watch("./hi/css/*.scss", ["hi-css"]);
    styleWatcher.on("change", function(event){});
