@@ -3,6 +3,7 @@
 //variables
 //COLORS
 $color-main: #ffffff;
+$color-white: #ffffff;
 $color-background: #f3f3f3;
 $color-background-2: #202B37;
 $color-text: #131313;
@@ -40,7 +41,7 @@ html {
    box-sizing: inherit;
 }
 body {
-   background-color: $color-background;
+   background-color: $color-white;
    color: $color-text;
    // text-transform: uppercase;
 }
