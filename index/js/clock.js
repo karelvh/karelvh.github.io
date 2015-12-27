@@ -25,7 +25,7 @@ function myCallback() {
         salute = "Good Night "+ star;
         // console.log("Night");
     }
-    document.getElementById('clock').innerHTML = salute;
+    document.getElementById('clockID').innerHTML = salute;
 }
 
 myCallback();

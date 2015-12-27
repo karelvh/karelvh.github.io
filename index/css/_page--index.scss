@@ -1,4 +1,8 @@
 //INDEX PAGE STYLING
+.body--night {
+    background-color: $color-head-dark;
+}
+
 .site {
    display: flex;
    flex-direction: column;
@@ -78,7 +82,7 @@ li {
    }
 }
 
-#clock{
+.clock{
   color: $color-head-dark;
   padding: 0.2em 0;
   position: relative;
@@ -109,4 +113,8 @@ li {
   @media screen and (min-width: $break-large){
      font-size: $font-medium;
   }
+}
+
+.clock--night {
+    color: $color-background;
 }
