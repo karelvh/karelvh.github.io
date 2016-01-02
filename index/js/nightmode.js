@@ -27,7 +27,7 @@ if (7 <= currentTime && currentTime < 19) {
 }
 else {
    document.body.className = "body--night";
-   clock.color = "clock clock--night";
+   clock.className = "clock clock--night";
    nightmodeEnabled = 1;
    // console.log(nightmodeEnabled);
 }
