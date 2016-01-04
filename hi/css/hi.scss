@@ -24,20 +24,23 @@ $font-huge: 50px;
 
 
 //PAGE STYLING
-html, body{
+html, body {
    height: 100%;
    font-family: "Oswald", sans-serif;
    font-size: $font-small;
    margin: 0;
 }
+
 html {
    box-sizing: border-box;
    position: relative;
    min-height: 100%
 }
+
 *, *:before, *:after {
    box-sizing: inherit;
 }
+
 body {
    background-color: $color-white;
    color: $color-text-3;
@@ -49,11 +52,12 @@ body {
     color: $color-white;
 }
 
-p{
+p {
    margin: 0 10px 10px 10px;
    font-weight: bold;
 }
-.hi{
+
+.hi {
    min-height: 800px;
    height: 100vh;
    font-size: 800px;
@@ -65,7 +69,21 @@ p{
       height: 50vh;
    }
 }
-.name{
+
+.goodTimeOfDay {
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: $screen-medium) {
+       display: block;
+       font-size: 30px;
+       margin-left: 20px;
+    }
+}
+
+.name {
    margin-left: 50px;
    font-size: 100px;
    align-items: center;
@@ -75,7 +93,8 @@ p{
       margin-left: 20px;
    }
 }
-.contact{
+
+.contact {
    margin-left: 50px;
    font-size: 80px;
    align-items: center;
@@ -86,7 +105,8 @@ p{
       margin-left: 20px;
    }
 }
-.links{
+
+.links {
    margin-left: 50px;
    font-size: 80px;
    align-items: center;
@@ -96,10 +116,11 @@ p{
       font-size: 30px;
       margin-left: 20px;
    }
-   a{
+   a {
       margin-left: 0;
    }
 }
-a{
+
+a {
    color: inherit;
 }
