@@ -1,6 +1,5 @@
 @import "../../css/normalize";
 
-
 /* Box-sizing border-box */
 * { box-sizing: border-box; }
 
@@ -39,7 +38,7 @@ $orange: #ffa657;
     // -webkit-flex: 1;
     //     -ms-flex: 1;
     //         flex: 1;
-    // apparantly flex: 1 doesn't work properly in safari so this you have to provide a grow shrink and basis value 🙃
+    // apparently flex: 1 doesn't work properly in safari so this you have to provide a grow shrink and basis value 🙃
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 400px;
     -ms-flex: 1 1 400px;
