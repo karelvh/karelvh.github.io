@@ -101,13 +101,8 @@ li {
   }
 
   @media screen and (max-width: $break-small) {
-     font-size: $font-small;
      max-width: 100%;
      margin: 13px 13px 0 13px;
-  }
-
-  @media screen and (max-width: $break-xs) {
-     font-size: $font-smaller;
   }
 
   @media screen and (min-width: $break-large){
