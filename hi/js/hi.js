@@ -27,26 +27,26 @@ function nightmode(event) {
 function myCallback() {
     var salute;
     var h = currentTime;
-    var coffee = '<img class="emoji" title="coffee" alt="coffee" src="https://github.global.ssl.fastly.net/images/icons/emoji/coffee.png" height="20" width="20" align="absmiddle">';
-    var sunglasses = '<img class="emoji" title="sunglasses" alt="sunglasses" src="https://github.global.ssl.fastly.net/images/icons/emoji/sunglasses.png" height="20" width="20" align="absmiddle">';
-    var moon = '<img class="emoji" title="moon" alt="moon" src="https://github.global.ssl.fastly.net/images/icons/emoji/crescent_moon.png" height="20" width="20" align="absmiddle">';
-    var star = '<img class="emoji" title="star" alt="star" src="https://github.global.ssl.fastly.net/images/icons/emoji/star2.png" height="20" width="20" align="absmiddle">';
+    var coffee = '<img class="emoji" title="coffee" alt="coffee" src="https://github.global.ssl.fastly.net/images/icons/emoji/coffee.png" height="50" width="50" align="absmiddle">';
+    var sunglasses = '<img class="emoji" title="sunglasses" alt="sunglasses" src="https://github.global.ssl.fastly.net/images/icons/emoji/sunglasses.png" height="50" width="50" align="absmiddle">';
+    var moon = '<img class="emoji" title="moon" alt="moon" src="https://github.global.ssl.fastly.net/images/icons/emoji/crescent_moon.png" height="50" width="50" align="absmiddle">';
+    var star = '<img class="emoji" title="star" alt="star" src="https://github.global.ssl.fastly.net/images/icons/emoji/star2.png" height="50" width="50" align="absmiddle">';
 
     // console.log(h);
     if(h >= 3 && h < 12){
-        salute = "Good Morning " + coffee;
+        salute = "Good morning and welcome " + coffee;
         // console.log("Morning");
     }
     else if (h >= 12 && h < 18){
-        salute = "Good Afternoon " + sunglasses;
+        salute = "Good afternoon and welcome " + sunglasses;
         // console.log("Afternoon");
     }
     else if (h >= 18 && h < 22){
-        salute = "Good Evening "+ moon;
+        salute = "Good evening and welcome "+ moon;
         // console.log("Evening");
     }
     else{
-        salute = "Good Night "+ star;
+        salute = "Good night and welcome "+ star;
         // console.log("Night");
     }
     document.getElementById('emojiID').innerHTML = salute;
