@@ -24,7 +24,7 @@ function nightmode(event) {
 //    // console.log(nightmodeEnabled);
 // }
 
-function myCallback() {
+function emojiFunk() {
     var salute;
     var h = currentTime;
     var coffee = '<img class="emoji" title="coffee" alt="coffee" src="https://github.global.ssl.fastly.net/images/icons/emoji/coffee.png" height="50" width="50" align="absmiddle">';
@@ -52,4 +52,57 @@ function myCallback() {
     document.getElementById('emojiID').innerHTML = salute;
 }
 
-myCallback();
+(function(){
+    var salute;
+    var h = currentTime;
+
+    if(h >= 3 && h < 12){
+        salute = 'Good morning web traveller <span id="unicode"></span>';
+        // console.log("Morning");
+    }
+    else if (h >= 12 && h < 18){
+        salute = 'Good afternoon web traveller <span id="unicode"></span>';
+        // console.log("Afternoon");
+    }
+    else if (h >= 18 && h < 22){
+        salute = 'Good evening web traveller <span id="unicode"></span>';
+        // console.log("Evening");
+    }
+    else{
+        salute ='Good night web traveller <span id="unicode"></span>';
+        // console.log("Night");
+    }
+    document.getElementById('emojiID').innerHTML = salute;
+})();
+
+(function smileyCycler(){
+    // smile, sunbehind cloud, sun, thunder,
+    // var circles = "&#10690;";
+    var happy = "&#9786;";
+    // var cloud = "&#9925;";
+    var sad = "&#9785;";
+    // var sun = "&#9788;";
+    var sun = "&#9737;";
+    // var thunder = "&#9928;";
+    var snow = "&#10054;";
+    // var rocket = "&#128640;";
+    var umbrella = "&#9730;";
+    var airplane = "&#9992;";
+
+    var unicodesArr = [sad, umbrella, airplane, sun, happy, snow];
+    var i = 0;
+    var unicodesLength = unicodesArr.length;
+    var unicodeDiv = document.getElementById('unicode');
+
+
+    window.setInterval(function(){
+        if(i === unicodesLength) {
+            i = 0;
+        }
+
+        var unicode = unicodesArr[i++];
+        unicodeDiv.innerHTML = unicode;
+        // console.log(unicode);
+        // console.log(unicodeDiv);
+    }, 200);
+})();
