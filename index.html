@@ -1,93 +1,19 @@
 <!DOCTYPE html>
-<html>
-<!-- temp redirect to /hi page -->
-<!-- <script type="text/javascript">
-    window.location.replace("hi/");
-</script> -->
-
-<!--
-                                 `.`
-                              :;;;:;;;:
-                            :;::,,:::::;:
-                           ':,...,,,,:::;'
-                          ':...,,,,,::,:::'
-                         ;:.`,:,,:::::::::;:
-                         ;,`,,,::::::::::::;
-                        ;:`.,,:;'` `';::,::;:
-                        ;:.,,:;,     :;:,:::'
-                        ;,.,::'       ':,:::;
-                       `;,,,::`       `;,,::;`
-                       .:,,,:;         ;,,::;.
-                       .:,,,:;`       `;.,::;`
-                        ;:,,::'       ';.:::'
-                        ;:.:::;,     ,;..:::'
-                        ;:.::::;;  `';.`,::;;
-                        ;..::::::;;;;..,:::'
-                       ':`.::::::::,..,:::;;
-                      ':`.,::::::,,,:::::;'
-                     ':`.,::::::::::::::;'
-                    ':``,:::::::::::::;';
-                   ';`.,:::::;;';;;;;''
-                  ':``,::::;'    ...
-                 ';..,::::;'
-                ';`.,::::;'
-               ';`.,::::;'
-              ':``,::::;'
-             ':``,::::;'
-            ';`.,::::;'
-           ';`.,::::;'
-          ':``,::::;'
-         ':``,::::;'#
-        ';..,::::;'+''
-       ';`.,::::;'+;:;+
-      ';`.,::::;'.';::;+
-     ':`.,::::;'  .;::;'
-    ';``,:::::'.   `;;;+
-   ':..,::::;'+'`   `++
-   ':,,::::;'+;;'`
-   :;:::::;'+'::;'`
-    ;;:::;'  ';;:;+
-     ;;:;'    ';;;+
-      :'+      +'+
-
-
-the key is to minify your code-->
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>home | Karel Vh</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website of Karel Van Haeverbeek">
-    <meta name="author" content="Karel Van Haeverbeek">
-    <link rel="stylesheet" href="dist/css/app.min.css" title="main css" charset="utf-8" media="screen">
+    <meta charset="UTF-8">
+    <title>redir</title>
+    <script type="text/javascript">
+        var i = Math.floor((Math.random() * 5) + 1);
+        if (i === 1 || i === 2 || i === 3){
+            window.location.replace("hi/");
+        }
+        else {
+            window.location.replace("index/");
+        }
+    </script> -->
 </head>
-<body class="site">
-    <div class="site--content">
-        <p class="site--header glitch" data-text="Karel Van Haeverbeek">Karel Van Haeverbeek</p>
-        <p id="clockID" class="clock">
-            <img class="emoji" title="sunglasses" alt="sunglasses" src="https://github.global.ssl.fastly.net/images/icons/emoji/sunglasses.png" height="20" width="20" align="absmiddle">
-        </p>
-        <ul class="links--ul">
-            <li><a class="animated"href="http://registry.jsonresume.org/karelvanhaeverbeek" target="_blank">Resume</a></li>
-            <li><a class="animated" href="mailto:karelvanhaeverbeek@gmail.com?Subject=Contact%20Via%20Site">EMail</a></li>
-            <li><a class="animated"href="https://github.com/karelvh" target="_blank">GitHub</a></li>
-            <li><a class="animated"href="https://twitter.com/rightaftr" target="_blank">Twitter</a></li>
-            <li><a class="animated"href="https://www.youtube.com/channel/UCYg8QqJTD_5ie0x4kYwGfhQ" target="_blank">YouTube</a></li>
-            <li><a class="animated"href="https://instagram.com/karel_vh/" target="_blank">Instagram</a></li>
-            <li><a class="animated"href="http://www.last.fm/user/Bimmer48" target="_blank">Last.FM</a></li>
-        </ul>
-    </div>
-    <footer class="site--footer tooltip">
-        <p>
-            <a class="footer-link" target="_blank" href="https://twitter.com/rightaftr">&copy;<script> document.write(new Date().getFullYear());</script> Karel Van Haeverbeek</a>
-        </p>
-    </footer>
-    <script type="text/javascript" src="dist/js/app.min.js"></script>
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-64971057-1', 'auto');
-    ga('send', 'pageview');
-    </script>
+<body>
+
 </body>
 </html>

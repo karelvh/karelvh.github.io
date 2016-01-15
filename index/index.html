@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+<!-- temp redirect to /hi page -->
+<!-- <script type="text/javascript">
+    window.location.replace("hi/");
+</script> -->
+
 <!--
                                  `.`
                               :;;;:;;;:
@@ -46,35 +51,36 @@
       :'+      +'+
 
 
-the key is to keep it simple-->
+the key is to minify your code-->
 <head>
     <meta charset="utf-8">
-    <title>HI</title>
+    <title>home | Karel Vh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website by Karel Van Haeverbeek">
+    <meta name="description" content="Website of Karel Van Haeverbeek">
     <meta name="author" content="Karel Van Haeverbeek">
-    <link rel="stylesheet" href="./dist/css/app.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./dist/css/app.min.css" title="main css" charset="utf-8" media="screen">
 </head>
-<body>
-    <div class="site-content">
-        <!-- <p class="hi">hi</p> -->
-        <div class="flex-wrapper">
-            <p id="emojiID" class="goodTimeOfDay">
-                Good Afternoon web traveller
-                <span id="unicode"></span>
-                <!-- <img class="emoji" title="sunglasses" alt="sunglasses" src="https://github.global.ssl.fastly.net/images/icons/emoji/sunglasses.png" height="30" width="30" align="absmiddle"> -->
-            </p>
-            <p class="name">I'm Karel Van Haeverbeek.</p>
-            <p class="info">I do front-end web, iOS and video projects.</p>
-            <p class="contact">Send me a <a href="mailto:karelvanhaeverbeek@gmail.com?Subject=Message%20Via%20Site">message</a></p>
-        </div>
-        <p class="links">
-            <a href="https://github.com/karelvh" target="_blank">GitHub</a>
-            <a href="https://twitter.com/rightaftr" target="_blank">Twitter</a>
-            <a href="https://www.youtube.com/channel/UCYg8QqJTD_5ie0x4kYwGfhQ" target="_blank">YouTube</a>
-            <a href="http://www.last.fm/user/Bimmer48" target="_blank">LastFM</a>
+<body class="site">
+    <div class="site--content">
+        <p class="site--header glitch" data-text="Karel Van Haeverbeek">Karel Van Haeverbeek</p>
+        <p id="clockID" class="clock">
+            <img class="emoji" title="sunglasses" alt="sunglasses" src="https://github.global.ssl.fastly.net/images/icons/emoji/sunglasses.png" height="20" width="20" align="absmiddle">
         </p>
+        <ul class="links--ul">
+            <li><a class="animated"href="http://registry.jsonresume.org/karelvanhaeverbeek" target="_blank">Resume</a></li>
+            <li><a class="animated" href="mailto:karelvanhaeverbeek@gmail.com?Subject=Contact%20Via%20Site">EMail</a></li>
+            <li><a class="animated"href="https://github.com/karelvh" target="_blank">GitHub</a></li>
+            <li><a class="animated"href="https://twitter.com/rightaftr" target="_blank">Twitter</a></li>
+            <li><a class="animated"href="https://www.youtube.com/channel/UCYg8QqJTD_5ie0x4kYwGfhQ" target="_blank">YouTube</a></li>
+            <li><a class="animated"href="https://instagram.com/karel_vh/" target="_blank">Instagram</a></li>
+            <li><a class="animated"href="http://www.last.fm/user/Bimmer48" target="_blank">Last.FM</a></li>
+        </ul>
     </div>
+    <footer class="site--footer tooltip">
+        <p>
+            <a class="footer-link" target="_blank" href="https://twitter.com/rightaftr">&copy;<script> document.write(new Date().getFullYear());</script> Karel Van Haeverbeek</a>
+        </p>
+    </footer>
     <script type="text/javascript" src="./dist/js/app.min.js"></script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

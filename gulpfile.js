@@ -43,7 +43,7 @@ gulp.task("index-js", function(){
       .pipe(sourcemaps.write())
       //enable uglify before deployment
       .pipe(uglify())
-      .pipe(gulp.dest('./dist/js'))
+      .pipe(gulp.dest('./index/dist/js'))
       .pipe(notify({message: 'js built'}));
 });
 
@@ -60,7 +60,7 @@ gulp.task("index-css", function () {
       .pipe(sourcemaps.write())
       //enable minifier before deployment
       .pipe(cssMinifier())
-      .pipe(gulp.dest("./dist/css"))
+      .pipe(gulp.dest("./index/dist/css"))
       .pipe(notify({message: 'stylesheet built'}));
 });
 
