@@ -1,0 +1,41 @@
+a {
+
+  color: $color-blue;
+}
+
+p {
+
+}
+
+.site {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink 35px, $color-blue 35px, $color-blue 70px, $color-yellow 70px, $color-yellow 105px);
+}
+
+.site-content {
+
+  background-color: $color-yellow;
+  padding: 20px 20px 10px 20px;
+
+  @media screen and (max-width: 690px) {
+
+    font-size: $font-medium;
+    width: 100%;
+  }
+}
+
+.site-links {
+
+  margin-bottom: 1em;
+}
+
+.site-links a {
+
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
