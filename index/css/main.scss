@@ -5,18 +5,13 @@
 @import "variables";
 @import "fonts";
 
+//ANIMATIONS
+@import "animation-background";
+
 //PAGE STYLING
 @import "html-body";
-@import "page--index";
-@import "page--404";
-@import "footer";
-// @import "hi";
-
-//ANIMATIONS
-@import "_animation--links_hover";
-//@import "animation--header_glitch";
-//@import "animation--links_fade-in";
-//@import "tooltip";
+@import "page-404";
+@import "page-index";
 
 //DEBUGGING
-//@import "debug";
+// @import "debug";

@@ -1,0 +1,11 @@
+@keyframes backgroundMover {
+  0%  {
+    background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink 45px, $color-blue 45px, $color-blue 90px, $color-yellow 90px, $color-yellow 135px);
+  }
+  50% {
+    background-image: repeating-linear-gradient(120deg, $color-yellow, $color-yellow 45px, $color-pink 45px, $color-pink 90px, $color-blue 90px, $color-blue 135px);
+  }
+  100% {
+    background-image: repeating-linear-gradient(120deg, $color-blue, $color-blue 45px, $color-yellow 45px, $color-yellow 90px, $color-pink 90px, $color-pink 135px);
+  }
+}
