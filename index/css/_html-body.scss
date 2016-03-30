@@ -1,23 +1,30 @@
-html, body {
+body,
+html {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 3vw;
   text-transform: uppercase;
   font-weight: 900;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   padding: 0;
   margin: 0;
   transform-style: preserve-3d;
 }
+
 html {
   box-sizing: border-box;
   height: 100vh;
 }
-*, *:before, *:after {
+
+*,
+*:after,
+*:before {
   box-sizing: inherit;
 }
+
 body {
   color: $color-black;
 }
-::selection{
+
+::selection {
   background: $color-white;
 }
