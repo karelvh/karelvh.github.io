@@ -5,13 +5,13 @@
 @import "variables";
 @import "fonts";
 
+//ANIMATIONS
+@import "animation-background";
+
 //PAGE STYLING
 @import "html-body";
 @import "page-404";
 @import "page-index";
 
-//ANIMATIONS
-
-
 //DEBUGGING
-//@import "debug";
+// @import "debug";

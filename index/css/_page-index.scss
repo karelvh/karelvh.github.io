@@ -5,6 +5,8 @@ a {
 
 p {
 
+  margin-top: 10px;
+  margin-bottom: 1em;
 }
 
 .site {
@@ -13,24 +15,26 @@ p {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink 35px, $color-blue 35px, $color-blue 70px, $color-yellow 70px, $color-yellow 105px);
+  // background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink 45px, $color-blue 45px, $color-blue 90px, $color-yellow 90px, $color-yellow 135px);
+  animation: backgroundMover 16s linear 8s infinite alternate;
+
+  @media screen and (max-width: 1024px) {
+
+    animation-play-state: paused;
+  }
 }
 
 .site-content {
 
   background-color: $color-yellow;
-  padding: 20px 20px 10px 20px;
+  padding: .5em;
+  box-shadow: 0px 1px 2px rgba($color-black, .15);
 
   @media screen and (max-width: 690px) {
 
     font-size: $font-medium;
     width: 100%;
   }
-}
-
-.site-links {
-
-  margin-bottom: 1em;
 }
 
 .site-links a {
