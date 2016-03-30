@@ -16,7 +16,7 @@ p {
   align-items: center;
   height: 100vh;
   // background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink 45px, $color-blue 45px, $color-blue 90px, $color-yellow 90px, $color-yellow 135px);
-  animation: backgroundMover 16s linear 8s infinite alternate;
+  animation: backgroundMover 16s linear 0s infinite alternate;
 
   @media screen and (max-width: $break-medium) {
 
