@@ -12,8 +12,13 @@ p {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  // background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink 45px, $color-blue 45px, $color-blue 90px, $color-yellow 90px, $color-yellow 135px);
-  animation: backgroundMover 16s linear 0s infinite alternate;
+  background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink 45px, $color-blue 45px, $color-blue 90px, $color-yellow 90px, $color-yellow 135px);
+  // animation: backgroundMover 6s linear 2s infinite alternate;
+
+  &:hover,
+  &:active {
+    animation-play-state: paused;
+  }
 
   @media screen and (max-width: $break-medium) {
     animation-play-state: paused;
@@ -21,14 +26,41 @@ p {
 }
 
 .site-content {
+  position: relative;
   background-color: $color-yellow;
   padding: .5em;
+  border-radius: 4px;
   box-shadow: 0 1px 2px rgba($color-black, .15);
+  transition: all .6s;
+
+  &:hover,
+  &:active {
+    transform: scale(1.01, 1.01);
+  }
 
   @media screen and (max-width: $break-small) {
     font-size: $font-medium;
     width: 100%;
+    border-radius: 0;
   }
+}
+
+//smooth box-shadow
+.site-content::after {
+  content: "";
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba($color-black, .3);
+  opacity: 0;
+  transition: all .6s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.site-content:hover:after {
+  opacity: 1;
 }
 
 .site-links a {
