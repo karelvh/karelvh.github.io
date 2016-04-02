@@ -11,3 +11,18 @@
     background-image: repeating-linear-gradient(120deg, $color-blue, $color-blue 45px, $color-yellow 45px, $color-yellow 90px, $color-pink 90px, $color-pink 135px);
   }
 }
+
+@keyframes bgDisco {
+  2%{
+    background-color: $color-blue;
+  }
+  48%{
+    background-color: $color-blue;
+  }
+  50%{
+    background-color: $color-pink;
+  }
+  100%{
+    background-color: $color-pink;
+  }
+}

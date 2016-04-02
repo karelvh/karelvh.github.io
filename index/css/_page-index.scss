@@ -12,8 +12,10 @@ p {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink 45px, $color-blue 45px, $color-blue 90px, $color-yellow 90px, $color-yellow 135px);
+  background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink $bg-width1, $color-blue $bg-width1, $color-blue $bg-width2, $color-yellow $bg-width2, $color-yellow $bg-width3);
   // animation: backgroundMover 6s linear 2s infinite alternate;
+  // animation: bgDisco 4s linear 0s infinite;
+
 
   &:hover,
   &:active {
@@ -22,6 +24,7 @@ p {
 
   @media screen and (max-width: $break-medium) {
     animation-play-state: paused;
+    background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink $bg-mobile-width1, $color-blue $bg-mobile-width1, $color-blue $bg-mobile-width2, $color-yellow $bg-mobile-width2, $color-yellow $bg-mobile-width3);
   }
 }
 
@@ -35,7 +38,7 @@ p {
 
   &:hover,
   &:active {
-    transform: scale(1.01, 1.01);
+    transform: scale(1.02, 1.02);
   }
 
   @media screen and (max-width: $break-small) {
