@@ -1,5 +1,13 @@
 a {
-  color: $color-blue;
+  border-bottom: .15em solid $color-blue;
+  color: $color-black;
+  text-decoration: none;
+  transition: color .6s;
+  // color: $color-blue;
+
+  &:hover {
+    color: $color-blue;
+  }
 }
 
 p {
@@ -12,9 +20,10 @@ p {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink $bg-width1, $color-blue $bg-width1, $color-blue $bg-width2, $color-yellow $bg-width2, $color-yellow $bg-width3);
-  // animation: backgroundMover 6s linear 2s infinite alternate;
-  // animation: bgDisco 4s linear 0s infinite;
+  // background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink $bg-width1, $color-blue $bg-width1, $color-blue $bg-width2, $color-yellow $bg-width2, $color-yellow $bg-width3);
+  // background-image: linear-gradient(90deg, $color-pink, $color-pink $bg-width1, $color-blue $bg-width1, $color-blue $bg-width2);
+  background-color: $color-yellow;
+  // background-color: $color-pink;
 
 
   &:hover,
@@ -24,16 +33,32 @@ p {
 
   @media screen and (max-width: $break-medium) {
     animation-play-state: paused;
-    background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink $bg-mobile-width1, $color-blue $bg-mobile-width1, $color-blue $bg-mobile-width2, $color-yellow $bg-mobile-width2, $color-yellow $bg-mobile-width3);
+    // background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink $bg-mobile-width1, $color-blue $bg-mobile-width1, $color-blue $bg-mobile-width2, $color-yellow $bg-mobile-width2, $color-yellow $bg-mobile-width3);
   }
 }
 
+// .site-content_container {
+//   background-color: $color-blue;
+//   border: 8vw solid $color-blue;
+//   border-radius: 5px;
+//   transition: all .6s;
+//
+//   &:hover {
+//     border: 7vw solid $color-blue;
+//   }
+//
+//   @media screen and (max-width: $break-small) {
+//     border: 0px;
+//   }
+// }
+
 .site-content {
   position: relative;
-  background-color: $color-yellow;
+  // background-color: $color-yellow;
+  // border: 5vw solid rgba($color-blue, 0);
   padding: .5em;
-  border-radius: 4px;
-  box-shadow: 0 1px 2px rgba($color-black, .15);
+  border-radius: 5px;
+  // box-shadow: 0 1px 5px rgba($color-black, .15);
   transition: all .6s;
 
   &:hover,
@@ -45,14 +70,15 @@ p {
     font-size: $font-medium;
     width: 100%;
     border-radius: 0;
+    border: 0px
   }
 }
 
 //smooth box-shadow
 .site-content::after {
   content: "";
-  border-radius: 4px;
-  box-shadow: 0 5px 15px rgba($color-black, .3);
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba($color-black, .3);
   opacity: 0;
   transition: all .6s;
   top: 0;

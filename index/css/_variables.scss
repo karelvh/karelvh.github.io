@@ -4,7 +4,8 @@ $color-black: #2C3E50;
 $color-white: #ffffff;
 $color-yellow: #ffd923;
 $color-pink: #ff9189;
-$color-blue: #009bc6;
+// $color-blue: #009bc6;
+$color-blue: #40C1CB;
 //SCREEN SIZES
 $break-large: 1500px;
 $break-medium: 1024px;
@@ -19,7 +20,9 @@ $font-huge: 50px;
 $font-xl: 66px;
 $font-xxl: 88px;
 //BACKGROUND WIDTHS
-$bg-width1: 90px;
+$bg-width1: 150vw;
+$bg-width2: 0vw;
+$bg-width1: 100px;
 $bg-width2: 2 * $bg-width1;
 $bg-width3: 3 * $bg-width1;
 $bg-mobile-width1: 50px;
