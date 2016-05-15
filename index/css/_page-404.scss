@@ -1,7 +1,15 @@
 .error-body {
   margin: 20px;
+
+  @media screen and (max-width: $break-small) {
+    font-size: $font-medium;
+  }
 }
 
 .error-body a {
   color: $color-blue;
+}
+
+.error-body p.lead {
+  line-height: 2em;
 }
