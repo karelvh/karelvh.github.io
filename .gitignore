@@ -48,5 +48,5 @@ Temporary Items
 config.codekit
 TODO.md
 css/main.css
-*-min.*
 node_modules
+./index/js/api_key.js
