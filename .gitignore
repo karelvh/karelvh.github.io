@@ -49,4 +49,4 @@ config.codekit
 TODO.md
 css/main.css
 node_modules
-./index/js/api_key.js
+*key.js
