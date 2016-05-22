@@ -17,9 +17,10 @@ p {
 
 .site {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   // background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink $bg-width1, $color-blue $bg-width1, $color-blue $bg-width2, $color-yellow $bg-width2, $color-yellow $bg-width3);
   // background-image: linear-gradient(90deg, $color-pink, $color-pink $bg-width1, $color-blue $bg-width1, $color-blue $bg-width2);
   background-color: $color-yellow;
