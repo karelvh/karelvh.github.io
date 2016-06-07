@@ -17,13 +17,13 @@
         <div class="site-text">
           <p class="name">Hi! I'm Karel Van Haeverbeek.</p>
           <p class="info">I do front-end web design and video projects.</p>
-          <p class="contact">Feel free to get in touch.</p>
+          <p class="contact">Feel free to <a id="btn-get_in_touch" tabindex="1">get in touch</a>.</p>
           <!-- <p class="contact">Feel free to <a rel="noopener noreferrer"  href="mailto:karelvanhaeverbeek@gmail.com?Subject=Message%20Via%20Site">get in touch</a>.</p> -->
           <!-- <form class="contact" action="mailto:karelvanhaeverbeek@gmail.com?Subject=Message%20Via%20Site" method="post"  enctype="text/plain">
             <input onClick="this.setSelectionRange(0, this.value.length)" type="text" name="message" value="type your message here and press enter">
           </form> -->
-          <form class="contact" action="https://formspree.io/karelvanhaeverbeek@gmail.com" method="post">
-            <input type="email" name="_replyto" required placeholder="Type your email address here,">
+          <form id="form-contact" class="contact hidden" action="https://formspree.io/karelvanhaeverbeek@gmail.com" method="post">
+            <input type="email" name="_replyto" required placeholder="Type your email address here">
             <input type="text" name="message" required placeholder="and your message here.">
             <input type="hidden" name="_subject" value="Message from site" />
             <input type="text" name="_gotcha" style="display:none" />
@@ -41,7 +41,7 @@
         </div>
       </div>
     </div>
-    <!-- <script type="text/javascript" src="./dist/js/app.min.js"></script> -->
+    <script type="text/javascript" src="./dist/js/app.min.js"></script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

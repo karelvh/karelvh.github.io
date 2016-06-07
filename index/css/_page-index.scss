@@ -3,9 +3,13 @@ a {
   color: $color-black;
   text-decoration: none;
   transition: color .6s;
+  cursor: pointer;
+  outline: none;
   // color: $color-blue;
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     color: $color-blue;
   }
 }
@@ -92,19 +96,15 @@ p {
   z-index: -1;
 }
 
-// .site-content:hover:after,
+.site-content:hover:after,
 .site-content:active:after,
 .site-content:focus:after {
   opacity: 1;
 }
 
 .site-text {
-
-  &:hover,
-  &:active,
-  &:focus {
-    outline: none;
-  }
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .site-links {
@@ -115,16 +115,16 @@ p {
 
 .site-links a {
   display: inline-block;
-  // margin-right: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
   margin-bottom: 10px;
-
-  @media screen and (max-width: $break-small) {
-    // flex: 25%;
-    // font-size: 5rem;
-  }
 }
 
-.contact input {
+#form-contact {
+  transition: all .6s;
+}
+
+#form-contact input {
   outline: none;
   font-family: inherit;
   color: $color-black;
@@ -133,16 +133,18 @@ p {
   margin-bottom: 1em;
   margin-right: 10px;
   width: 100%;
-  border-bottom: .15em solid $color-black;
+  border-bottom: .15em solid rgba($color-black, 0.7);
+  border-radius: 0;
   transition: all .6s;
+  display: block;
 
   &:focus,
   &:active {
-    border-bottom: .15em solid $color-blue;
+    border-bottom: .15em solid $color-black;
   }
 }
 
-.contact button[type=submit] {
+#form-contact button[type=submit] {
   color: inherit;
   background-color: inherit;
   border: .15em solid $color-black;
@@ -150,16 +152,18 @@ p {
   margin-bottom: 1em;
   margin-right: 10px;
   transition: all .6s;
-  // display: block;
-  // margin-left: -2000px;
-  // height: 0;
-  // margin: 0;
-  // padding: 0;
-  // border: none;
+  text-transform: inherit;
+  outline: none;
 
   &:hover,
-  &:active {
-    color: $color-blue;
-    border: .15em solid $color-blue;
+  &:active,
+  &:focus {
+    // color: $color-blue;
+    // border: .15em solid $color-blue;
+    animation: linkPulse 2s ease-in-out 0s infinite alternate;
   }
+}
+
+.hidden {
+  display: none;
 }
