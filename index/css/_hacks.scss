@@ -1,0 +1,17 @@
+@mixin placeholder-color {
+  color: #5f6c78;
+  color: rgba($color-black, 0.5);
+}
+
+::-webkit-input-placeholder {
+  @include placeholder-color;
+}
+:-moz-placeholder {
+  @include placeholder-color;
+}
+::-moz-placeholder {
+  @include placeholder-color;
+}
+:-ms-input-placeholder {
+  @include placeholder-color;
+}

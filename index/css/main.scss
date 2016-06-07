@@ -1,17 +1,20 @@
-//normalize
+// normalize
 @import "normalize";
 
-//variables
+// variables
 @import "variables";
 @import "fonts";
 
-//ANIMATIONS
+// ANIMATIONS
 @import "animation-background";
 
-//PAGE STYLING
+// PAGE STYLING
 @import "html-body";
 @import "page-404";
 @import "page-index";
 
-//DEBUGGING
-// @import "debug";
+// HACKS like placeholder styling and other stuff that should be easier to do.
+@import "hacks";
+
+// DEBUGGING
+@import "debug";

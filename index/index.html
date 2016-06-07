@@ -9,18 +9,29 @@
     <meta name="keywords" content="karel van haeverbeek, karel vh, karel, van haeverbeek, personal site">
     <meta name="robots" content="index,follow">
     <link rel="stylesheet" href="./dist/css/app.min.css" title="main css" charset="utf-8" media="screen">
-    <link rel="stylesheet" href="./dist/css/print.css" title="main css" charset="utf-8" media="print">
     <link rel="shortcut icon" href="../favicon.ico">
 </head>
 <body class="site">
     <div class="site-content_container">
       <div class="site-content">
-        <div class="site-text printable" contenteditable="true">
+        <div class="site-text">
           <p class="name">Hi! I'm Karel Van Haeverbeek.</p>
           <p class="info">I do front-end web design and video projects.</p>
-          <p class="contact">Feel free to <a contenteditable="false" rel="noopener noreferrer"  href="mailto:karelvanhaeverbeek@gmail.com?Subject=Message%20Via%20Site">get in touch</a>.</p>
+          <p class="contact">Feel free to get in touch.</p>
+          <!-- <p class="contact">Feel free to <a rel="noopener noreferrer"  href="mailto:karelvanhaeverbeek@gmail.com?Subject=Message%20Via%20Site">get in touch</a>.</p> -->
+          <!-- <form class="contact" action="mailto:karelvanhaeverbeek@gmail.com?Subject=Message%20Via%20Site" method="post"  enctype="text/plain">
+            <input onClick="this.setSelectionRange(0, this.value.length)" type="text" name="message" value="type your message here and press enter">
+          </form> -->
+          <form class="contact" action="https://formspree.io/karelvanhaeverbeek@gmail.com" method="post">
+            <input type="email" name="_replyto" required placeholder="Type your email address here,">
+            <input type="text" name="message" required placeholder="and your message here.">
+            <input type="hidden" name="_subject" value="Message from site" />
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="hidden" name="_next" value="/thanks.html" />
+            <button type="submit">Send</button>
+          </form>
         </div>
-        <div class="site-links" contenteditable="false">
+        <div class="site-links">
             <a rel="noopener noreferrer" href="/resume/" target="_blank">Resume</a>
             <a rel="noopener noreferrer" href="https://www.linkedin.com/in/karel-van-haeverbeek-a4180b114" target="_blank">LinkedIn</a>
             <a rel="noopener noreferrer" href="https://github.com/karelvh" target="_blank">GitHub</a>
