@@ -54,16 +54,17 @@ p {
 
 .site-content {
   position: relative;
-  // background-color: $color-yellow;
-  // border: 5vw solid rgba($color-blue, 0);
   padding: .5em;
   border-radius: 5px;
-  // box-shadow: 0 1px 5px rgba($color-black, .15);
   transition: all .6s;
+  // transform: scale(0.99);
+  // box-shadow: 0 2px 10px rgba($color-black, .3);
 
   &:hover,
   &:active {
-    transform: scale(1.02, 1.02);
+    backface-visibility: hidden;
+    // transform: translateZ(0) scale(1.0, 1.0);
+    // transform: translateZ(0) scale(1.02, 1.02);
   }
 
   @media screen and (max-width: $break-small) {
