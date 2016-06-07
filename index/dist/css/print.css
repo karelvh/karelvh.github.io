@@ -1,0 +1,10 @@
+@media print {
+  .site-links {
+    display: none;
+  }
+
+  .printable {
+    font-family: "Open Sans", "Arial", sans-serif;
+    display: block;
+  }
+}
