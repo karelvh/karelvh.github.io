@@ -151,7 +151,7 @@ p {
   width: 100%;
   margin-bottom: 1em;
   margin-right: 10px;
-  transition: all .6s;
+  transition: all 1s;
   text-transform: inherit;
   outline: none;
 
@@ -160,7 +160,7 @@ p {
   &:focus {
     // color: $color-blue;
     // border: .15em solid $color-blue;
-    animation: linkPulse 2s ease-in-out 0s infinite alternate;
+    animation: linkPulse 1s ease-in-out 0s infinite alternate;
   }
 }
 
