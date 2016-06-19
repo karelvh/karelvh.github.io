@@ -1,13 +1,15 @@
 body,
 html {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 2.5vw;
-  text-transform: uppercase;
+  font-family: "Montserrat", "Arial", sans-serif;
+  // font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 3vw;
+  // text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 0;
   padding: 0;
   margin: 0;
   transform-style: preserve-3d;
+  filter: blur(0);
 }
 
 html {

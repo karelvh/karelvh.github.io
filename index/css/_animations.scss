@@ -26,3 +26,19 @@
     background-color: $color-pink;
   }
 }
+
+@keyframes linkPulse {
+  0% {
+    color: $color-black;
+    border: .15em solid $color-black;
+  }
+  100% {
+    color: $color-blue;
+    border: .15em solid $color-blue;
+  }
+
+  // 100% {
+  //   color: $color-pink;
+  //   border: .15em solid $color-pink;
+  // }
+}
