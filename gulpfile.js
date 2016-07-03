@@ -8,32 +8,33 @@ var notify = require('gulp-notify');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var gulpif = require('gulp-if');
-
-gulp.task('default', function () {
-  gulp.watch('./index/css/*.scss', ['css']);
-  gulp.watch('./index/js/*.js', ['js']);
-});
+var browserSync = require('browser-sync').create();
 
 //////////////////////////////
 //////index page tasks ///////
 //////////////////////////////
-gulp.task('index-watch', function () {
-  gulp.watch('./index/css/*.scss', ['index-css']);
-  gulp.watch('./index/js/*.js', ['index-js']);
+gulp.task('watch', ['js', 'scss'], function () {
+  browserSync.init({
+    server: './'
+  });
+  gulp.watch('./scss/*.scss', ['scss']);
+  gulp.watch('./js/*.js', ['js']);
+  gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
-gulp.task('index-js', function () {
-  gulp.src('./index/js/*.js')
+gulp.task('js', function () {
+  return gulp.src('./js/*.js')
   .pipe(sourcemaps.init())
   .pipe(concat('app.min.js'))
   .pipe(sourcemaps.write())
   .pipe(gulpif(production, uglify()))
-  .pipe(gulp.dest('./index/dist/js'))
+  .pipe(gulp.dest('./dist/js'))
+  .pipe(browserSync.stream())
   .pipe(notify({ message: 'js built' }));
 });
 
-gulp.task('index-css', function () {
-  gulp.src('./index/css/*.scss')
+gulp.task('scss', function () {
+  return gulp.src('./scss/*.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(csslint({
     ids: false,
@@ -44,49 +45,14 @@ gulp.task('index-css', function () {
   .pipe(concat('app.min.css'))
   .pipe(sourcemaps.write())
   .pipe(gulpif(production, cssMinifier()))
-  .pipe(gulp.dest('./index/dist/css'))
+  .pipe(gulp.dest('./dist/css'))
+  .pipe(browserSync.stream())
   .pipe(notify({ message: 'stylesheet built' }));
 });
 
-gulp.task('index', ['set-dev-node-env', 'index-watch', 'index-css', 'index-js']);
-gulp.task('index-prod', ['set-prod-node-env', 'index-watch', 'index-css', 'index-js']);
-
-//////////////////////////////
-/////// hi page tasks ////////
-//////////////////////////////
-gulp.task('hi-watch', function () {
-  gulp.watch('./hi/css/*.scss', ['hi-css']);
-  gulp.watch('./hi/js/*.js', ['hi-js']);
-});
-
-gulp.task('hi-js', function () {
-  gulp.src('./hi/js/*.js')
-  .pipe(sourcemaps.init())
-  .pipe(concat('app.min.js'))
-  .pipe(sourcemaps.write())
-  .pipe(gulpif(production, uglify()))
-  .pipe(gulp.dest('./hi/dist/js'))
-  .pipe(notify({ message: 'js built' }));
-});
-
-gulp.task('hi-css', function () {
-  gulp.src('./hi/css/*.scss')
-  .pipe(sass().on('error', sass.logError))
-  .pipe(csslint({
-    ids: false,
-  }))
-  .pipe(csslint.reporter())
-  .pipe(sourcemaps.init())
-  .pipe(autoprefixer())
-  .pipe(concat('app.min.css'))
-  .pipe(sourcemaps.write())
-  .pipe(gulpif(production, cssMinifier()))
-  .pipe(gulp.dest('./hi/dist/css'))
-  .pipe(notify({ message: 'stylesheet built' }));
-});
-
-gulp.task('hi', ['set-dev-node-env', 'hi-watch', 'hi-css', 'hi-js']);
-gulp.task('hi-prod', ['set-prod-node-env', 'hi-watch', 'hi-css', 'hi-js']);
+gulp.task('default', ['set-dev-node-env', 'watch', 'scss', 'js']);
+gulp.task('site-dev', ['set-dev-node-env', 'watch', 'scss', 'js']);
+gulp.task('site-prod', ['set-prod-node-env', 'watch', 'scss', 'js']);
 
 //////////////////////////////
 /////// set node ENV /////////

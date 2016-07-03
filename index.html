@@ -1,18 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>redir</title>
-    <script type="text/javascript">
-        // var i = Math.floor((Math.random() * 5) + 1);
-        // if (i <= 3){
-        //     window.location.replace("hi/");
-        // }
-        // else {
-            window.location.replace("index/");
-        // }
-    </script>
+    <meta charset="utf-8">
+    <title>Karel Van Haeverbeek's space on the web | Karel Van Haeverbeek | Karel vh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website of Karel Van Haeverbeek">
+    <meta name="author" content="Karel Van Haeverbeek">
+    <meta name="keywords" content="karel van haeverbeek, karel vh, karel, van haeverbeek, personal site">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="./dist/css/app.min.css" title="main css" charset="utf-8" media="screen">
+    <link rel="shortcut icon" href="../favicon.ico">
 </head>
-<body>
+<body class="site">
+    <div class="site-content_container">
+      <div class="site-content">
+        <div class="site-text">
+          <p class="name">Hi! I'm Karel Van Haeverbeek.</p>
+          <p class="info">I do front-end web design and video projects.</p>
+          <p class="contact">Feel free to <a id="btn-get_in_touch" tabindex="1">get in touch</a>.</p>
+          <form id="form-contact" class="contact hidden" action="https://formspree.io/karelvanhaeverbeek@gmail.com" method="post">
+            <input type="email" name="_replyto" required placeholder="Type your email address here">
+            <input type="text" name="message" required placeholder="and your message here.">
+            <input type="hidden" name="_subject" value="Message from site" />
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="hidden" name="_next" value="/thanks.html" />
+            <button type="submit">send</button>
+          </form>
+        </div>
+        <div class="site-links">
+            <a rel="noopener noreferrer" href="/resume/" target="_blank">Resume</a>
+            <a rel="noopener noreferrer" href="https://www.linkedin.com/in/karel-van-haeverbeek-a4180b114" target="_blank">LinkedIn</a>
+            <a rel="noopener noreferrer" href="https://github.com/karelvh" target="_blank">GitHub</a>
+            <a rel="noopener noreferrer" href="https://www.youtube.com/channel/UCYg8QqJTD_5ie0x4kYwGfhQ" target="_blank">YouTube</a>
+            <a rel="noopener noreferrer" href="https://twitter.com/rightaftr" target="_blank">Twitter</a>
+            <a rel="noopener noreferrer" href="http://www.last.fm/user/Bimmer48" target="_blank">LastFM</a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./dist/js/app.min.js"></script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-64971057-1', 'auto');
+    ga('send', 'pageview');
+    </script>
 </body>
 </html>
