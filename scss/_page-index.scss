@@ -1,118 +1,62 @@
 a {
   border-bottom: .15em solid $color-blue;
-  color: $color-black;
-  text-decoration: none;
-  transition: color .6s;
+  color: $color-blue-dark;
   cursor: pointer;
   outline: none;
+  text-decoration: none;
+  transition: border .6s;
 
   &:hover,
   &:active,
   &:focus {
-    color: $color-blue;
+    border-bottom: .15em solid $color-blue-dark;
   }
 }
 
 p {
-  margin-top: 10px;
   margin-bottom: 1em;
+  margin-top: 10px;
 }
 
 .site {
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(71,221,247,1) 0%,rgba(42,237,207,1) 100%);
+  color: $color-blue-dark;
   display: flex;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
-  // background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink $bg-width1, $color-blue $bg-width1, $color-blue $bg-width2, $color-yellow $bg-width2, $color-yellow $bg-width3);
-  // background-image: linear-gradient(90deg, $color-pink, $color-pink $bg-width1, $color-blue $bg-width1, $color-blue $bg-width2);
-  background-color: $color-yellow;
-  // background-color: $color-pink;
-
-
-  &:hover,
-  &:active {
-    animation-play-state: paused;
-  }
-
-  @media screen and (max-width: $break-medium) {
-    animation-play-state: paused;
-    // background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink $bg-mobile-width1, $color-blue $bg-mobile-width1, $color-blue $bg-mobile-width2, $color-yellow $bg-mobile-width2, $color-yellow $bg-mobile-width3);
-  }
 }
-
-// .site-content_container {
-//   background-color: $color-blue;
-//   border: 8vw solid $color-blue;
-//   border-radius: 5px;
-//   transition: all .6s;
-//
-//   &:hover {
-//     border: 7vw solid $color-blue;
-//   }
-//
-//   @media screen and (max-width: $break-small) {
-//     border: 0px;
-//   }
-// }
 
 .site-content {
-  position: relative;
-  padding: .5em;
   border-radius: 5px;
+  box-shadow: 0 2px 10px rgba($color-blue-dark, .3);
+  padding: .5em;
+  position: relative;
   transition: all .6s;
-  box-shadow: 0 2px 10px rgba($color-black, .3);
-
-  &:hover,
-  &:active,
-  &:focus {
-    // transform: translateZ(0) scale(1.02, 1.02);
-  }
 
   @media screen and (max-width: $break-small) {
-    font-size: $font-medium;
-    width: 100%;
-    border-radius: 0;
     border: 0px;
+    border-radius: 0;
+    width: 100%;
   }
-}
-
-//smooth box-shadow
-.site-content:after {
-  content: "";
-  border-radius: 5px;
-  // box-shadow: 0 2px 20px rgba($color-black, .3);
-  opacity: 0;
-  transition: all .6s;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-}
-
-.site-content:hover:after,
-.site-content:active:after,
-.site-content:focus:after {
-  opacity: 1;
 }
 
 .site-text {
-  margin-right: 10px;
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 .site-links {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .site-links a {
   display: inline-block;
-  margin-right: 10px;
-  margin-left: 10px;
   margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #form-contact {
@@ -120,41 +64,39 @@ p {
 }
 
 #form-contact input {
-  outline: none;
-  font-family: inherit;
-  color: $color-black;
   background-color: inherit;
   border: none;
+  border-bottom: .15em solid rgba($color-blue-dark, 0.5);
+  border-radius: 0;
+  color: $color-blue-dark;
+  display: block;
+  font-family: inherit;
   margin-bottom: 1em;
   margin-right: 10px;
-  width: 100%;
-  border-bottom: .15em solid rgba($color-black, 0.7);
-  border-radius: 0;
+  outline: none;
   transition: all .6s;
-  display: block;
+  width: 100%;
 
   &:focus,
   &:active {
-    border-bottom: .15em solid $color-black;
+    border-bottom: .15em solid $color-blue-dark;
   }
 }
 
 #form-contact button[type=submit] {
   color: inherit;
   background-color: inherit;
-  border: .15em solid $color-black;
-  width: 100%;
+  border: .15em solid $color-blue-dark;
   margin-bottom: 1em;
   margin-right: 10px;
-  transition: all 1s;
   text-transform: inherit;
+  transition: all 1s;
   outline: none;
+  width: 100%;
 
   &:hover,
   &:active,
   &:focus {
-    // color: $color-blue;
-    // border: .15em solid $color-blue;
     animation: linkPulse 1s ease-in-out 0s infinite alternate;
   }
 }

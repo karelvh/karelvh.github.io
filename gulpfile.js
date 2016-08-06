@@ -51,8 +51,8 @@ gulp.task('scss', function () {
 });
 
 gulp.task('default', ['set-dev-node-env', 'watch', 'scss', 'js']);
-gulp.task('site-dev', ['set-dev-node-env', 'watch', 'scss', 'js']);
-gulp.task('site-prod', ['set-prod-node-env', 'watch', 'scss', 'js']);
+gulp.task('dev', ['set-dev-node-env', 'watch', 'scss', 'js']);
+gulp.task('prod', ['set-prod-node-env', 'watch', 'scss', 'js']);
 
 //////////////////////////////
 /////// set node ENV /////////

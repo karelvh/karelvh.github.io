@@ -1,15 +1,18 @@
 body,
 html {
+  filter: blur(0);
   font-family: "Montserrat", "Arial", sans-serif;
   // font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 3vw;
-  // text-transform: uppercase;
+  font-size: 2.3vw;
   font-weight: 900;
   letter-spacing: 0;
-  padding: 0;
   margin: 0;
+  padding: 0;
   transform-style: preserve-3d;
-  filter: blur(0);
+
+  @media screen and (max-width: $break-medium) {
+    font-size: $font-medium;
+  }
 }
 
 html {
@@ -21,10 +24,6 @@ html {
 *:after,
 *:before {
   box-sizing: inherit;
-}
-
-body {
-  color: $color-black;
 }
 
 ::selection {
