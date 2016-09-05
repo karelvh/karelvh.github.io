@@ -19,21 +19,13 @@
     <meta property="twitter:creator" content="@backspxce">
     <meta property="twitter:site" content="@backspxce">
 </head>
-<body class="site">
-    <div class="site-content_container">
-      <div class="site-content">
+<body class="site flip-block">
+    <div class="site-content flipper-block">
+      <div class="front">
         <div class="site-text">
           <p class="name">Hi! I'm Karel Van Haeverbeek.</p>
           <p class="info">I do front-end web design and video projects.</p>
           <p class="contact">Feel free to <a id="btn-get_in_touch" tabindex="1">get in touch</a>.</p>
-          <form id="form-contact" class="contact hidden" action="https://formspree.io/karelvanhaeverbeek@gmail.com" method="post">
-            <input type="email" name="_replyto" required placeholder="Type your email address here">
-            <input type="text" name="message" required placeholder="and your message here.">
-            <input type="hidden" name="_subject" value="Message from site" />
-            <input type="text" name="_gotcha" style="display:none" />
-            <input type="hidden" name="_next" value="/thanks.html" />
-            <button type="submit">send</button>
-          </form>
         </div>
         <div class="site-links">
             <a rel="noopener noreferrer" href="/resume/" target="_blank">Resume</a>
@@ -43,6 +35,16 @@
             <a rel="noopener noreferrer" href="https://twitter.com/backspxce" target="_blank">Twitter</a>
             <a rel="noopener noreferrer" href="http://www.last.fm/user/Bimmer48" target="_blank">LastFM</a>
         </div>
+      </div>
+      <div class="back">
+        <form id="form-contact" class="contact" action="https://formspree.io/karelvanhaeverbeek@gmail.com" method="post">
+          <input type="email" name="_replyto" required placeholder="Type your email address here">
+          <input type="text" name="message" required placeholder="and your message here.">
+          <input type="hidden" name="_subject" value="Message from site" />
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_next" value="/thanks.html" />
+          <button type="submit">send</button>
+        </form>
       </div>
     </div>
     <script type="text/javascript" src="./dist/js/app.min.js"></script>
