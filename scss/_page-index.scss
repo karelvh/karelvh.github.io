@@ -61,6 +61,8 @@ p {
 
 #form-contact {
   transition: all .6s;
+  z-index: -5;
+  position: relative;
 }
 
 #form-contact input {
@@ -103,4 +105,9 @@ p {
 
 .hidden {
   display: none;
+}
+
+.card-contact {
+  margin-top: -500px;
+  padding: .5em;
 }
