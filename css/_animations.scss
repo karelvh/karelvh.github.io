@@ -1,4 +1,5 @@
 @keyframes backgroundMover {
+
   0% {
     background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink 45px, $color-blue 45px, $color-blue 90px, $color-yellow 90px, $color-yellow 135px);
   }
@@ -13,27 +14,33 @@
 }
 
 @keyframes bgDisco {
-  2%{
+
+  2% {
     background-color: $color-blue;
   }
-  48%{
+
+  48% {
     background-color: $color-blue;
   }
-  50%{
+
+  50% {
     background-color: $color-pink;
   }
-  100%{
+
+  100% {
     background-color: $color-pink;
   }
 }
 
 @keyframes linkPulse {
+
   0% {
-    color: $color-blue-dark;
     border: .15em solid $color-blue-dark;
+    color: $color-blue-dark;
   }
+
   100% {
-    color: $color-blue;
     border: .15em solid $color-blue;
+    color: $color-blue;
   }
 }

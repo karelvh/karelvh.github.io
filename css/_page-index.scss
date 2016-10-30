@@ -1,15 +1,20 @@
 a {
   border-bottom: .15em solid $color-blue;
+  // box-shadow: inset 0 -5px 0 $color-blue;
+  box-shadow: inset 0 -.11em 0 $color-blue;
   color: $color-blue-dark;
   cursor: pointer;
   outline: none;
   text-decoration: none;
-  transition: border .6s;
+  transition: all .6s;
 
   &:hover,
   &:active,
   &:focus {
+    background: $color-blue;
     border-bottom: .15em solid $color-blue-dark;
+    // box-shadow: inset 0 -4px 0 $color-blue-dark;
+    box-shadow: inset 0 -.09em 0 $color-blue-dark;
   }
 }
 
@@ -20,7 +25,7 @@ p {
 
 .site {
   align-items: center;
-  background: linear-gradient(to bottom, rgba(71,221,247,1) 0%,rgba(42,237,207,1) 100%);
+  background: linear-gradient(to bottom, rgba(71, 221, 247, 1) 0%, rgba(42, 237, 207, 1) 100%);
   color: $color-blue-dark;
   display: flex;
   justify-content: center;
@@ -35,7 +40,7 @@ p {
   transition: all .6s;
 
   @media screen and (max-width: $break-small) {
-    border: 0px;
+    border: 0;
     border-radius: 0;
     width: 100%;
   }
@@ -59,14 +64,14 @@ p {
   margin-right: 10px;
 }
 
-#form-contact {
+#form-contact { /* stylelint-disable-line */
   transition: all .6s;
 }
 
-#form-contact input {
+#form-contact input { /* stylelint-disable-line */
   background-color: inherit;
   border: none;
-  border-bottom: .15em solid rgba($color-blue-dark, 0.5);
+  border-bottom: .15em solid rgba($color-blue-dark, .5);
   border-radius: 0;
   color: $color-blue-dark;
   display: block;
@@ -83,15 +88,15 @@ p {
   }
 }
 
-#form-contact button[type=submit] {
-  color: inherit;
+#form-contact button[type=submit] { /* stylelint-disable-line */
   background-color: inherit;
   border: .15em solid $color-blue-dark;
+  color: inherit;
   margin-bottom: 1em;
   margin-right: 10px;
+  outline: none;
   text-transform: inherit;
   transition: all 1s;
-  outline: none;
   width: 100%;
 
   &:hover,

@@ -1,6 +1,6 @@
 @mixin placeholder-color {
   color: $color-blue;
-  color: rgba($color-blue-dark, 0.5);
+  color: rgba($color-blue-dark, .5);
 }
 
 ::-webkit-input-placeholder {

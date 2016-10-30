@@ -13,11 +13,11 @@ var browserSync = require('browser-sync').create();
 //////////////////////////////
 //////index page tasks ///////
 //////////////////////////////
-gulp.task('watch', ['js', 'scss'], function () {
+gulp.task('watch', ['js', 'css'], function () {
   browserSync.init({
-    server: './'
+    server: './',
   });
-  gulp.watch('./scss/*.scss', ['scss']);
+  gulp.watch(['./css/*.css', './css/*.scss'], ['css']);
   gulp.watch('./js/*.js', ['js']);
   gulp.watch('./*.html').on('change', browserSync.reload);
 });
@@ -33,8 +33,8 @@ gulp.task('js', function () {
   .pipe(notify({ message: 'js built' }));
 });
 
-gulp.task('scss', function () {
-  return gulp.src('./scss/*.scss')
+gulp.task('css', function () {
+  return gulp.src('./css/*.css')
   .pipe(sass().on('error', sass.logError))
   .pipe(csslint({
     ids: false,
@@ -50,9 +50,9 @@ gulp.task('scss', function () {
   .pipe(notify({ message: 'stylesheet built' }));
 });
 
-gulp.task('default', ['set-dev-node-env', 'watch', 'scss', 'js']);
-gulp.task('dev', ['set-dev-node-env', 'watch', 'scss', 'js']);
-gulp.task('prod', ['set-prod-node-env', 'watch', 'scss', 'js']);
+gulp.task('default', ['set-dev-node-env', 'watch', 'css', 'js']);
+gulp.task('dev', ['set-dev-node-env', 'watch', 'css', 'js']);
+gulp.task('prod', ['set-prod-node-env', 'watch', 'css', 'js']);
 
 //////////////////////////////
 /////// set node ENV /////////

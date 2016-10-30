@@ -1,18 +1,20 @@
 //COLORS
 $color-main: #ff5a5f;
-$color-black: #2C3E50;
+$color-black: #2c3e50;
 $color-white: #ffffff;
 $color-yellow: #ffd923;
 $color-pink: #ff9189;
 // $color-blue: #009bc6;
-$color-blue: #40C1CB;
+$color-blue: #40c1cb;
 $color-blue-dark: #4922c6;
+
 //SCREEN SIZES
 $break-large: 1500px;
 $break-medium: 1024px;
 $break-small: 800px;
+
 //FONT SIZES
-//These font sizes are based upon a 3:4, or .75 scale. Each font size is approximately 75% the size of the larger font size. Please don't use font sizes smaller than 16px as they are difficult to read on smaller screens.
+//These font sizes are based upon a 3:4, or .75 scale. Each font size is approximately 75% the size of the larger font size. Please think carefully about using font sizes smaller than 16px as these are difficult to read on smaller screens.
 $font-small: 16px;
 $font-medium: 21px;
 $font-big: 28px;
@@ -20,9 +22,10 @@ $font-bigger: 37px;
 $font-huge: 50px;
 $font-xl: 66px;
 $font-xxl: 88px;
+
 //BACKGROUND WIDTHS
 $bg-width1: 150vw;
-$bg-width2: 0vw;
+$bg-width2: 0;
 $bg-width1: 100px;
 $bg-width2: 2 * $bg-width1;
 $bg-width3: 3 * $bg-width1;
