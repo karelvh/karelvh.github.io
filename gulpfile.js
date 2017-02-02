@@ -1,14 +1,15 @@
-var gulp = require('gulp');
-var csslint = require('gulp-csslint');
-var cssMinifier = require('gulp-minify-css');
-var sourcemaps = require('gulp-sourcemaps');
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var notify = require('gulp-notify');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var gulpif = require('gulp-if');
-var browserSync = require('browser-sync').create();
+const gulp = require('gulp');
+const csslint = require('gulp-csslint');
+const cssMinifier = require('gulp-minify-css');
+const sourcemaps = require('gulp-sourcemaps');
+const uglify = require('gulp-uglify');
+const concat = require('gulp-concat');
+const notify = require('gulp-notify');
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const gulpif = require('gulp-if');
+const browserSync = require('browser-sync').create();
+const babel = require('gulp-babel');
 
 //////////////////////////////
 //////index page tasks ///////
@@ -24,6 +25,9 @@ gulp.task('watch', ['js', 'css'], function () {
 
 gulp.task('js', function () {
   return gulp.src('./js/*.js')
+  .pipe(babel({
+            presets: ['es2015']
+  }))
   .pipe(sourcemaps.init())
   .pipe(concat('app.min.js'))
   .pipe(sourcemaps.write())
