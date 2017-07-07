@@ -1,0 +1,87 @@
+.color-blue {
+  color: $color-blue;
+}
+
+.color-green {
+  color: $color-green;
+}
+
+.color-pink {
+  color: $color-pink;
+}
+
+.color-linkedin {
+  color: $color-linkedin;
+  border-color: $color-linkedin;
+
+  &:hover {
+    box-shadow: 0 0 2rem 0 $color-linkedin;
+  }
+}
+
+.color-github {
+  color: $color-github;
+  border-color: $color-github;
+
+  &:hover {
+    box-shadow: 0 0 2rem 0 $color-github;
+  }
+}
+
+.color-youtube {
+  color: $color-youtube;
+  border-color: $color-youtube;
+
+  &:hover {
+    box-shadow: 0 0 2rem 0 $color-youtube;
+  }
+}
+
+.color-twitter {
+  color: $color-twitter;
+  border-color: $color-twitter;
+
+  &:hover {
+    box-shadow: 0 0 2rem 0 $color-twitter;
+  }
+}
+
+.color-instagram {
+  color: $color-instagram;
+  border-color: $color-instagram;
+
+  &:hover {
+    box-shadow: 0 0 2rem 0 $color-instagram;
+  }
+}
+
+.color-snapchat {
+  color: #000000;
+  border-color: $color-snapchat;
+
+  &:hover {
+    box-shadow: 0 0 2rem 0 $color-snapchat;
+  }
+}
+
+.color-lastfm {
+  color: $color-lastfm;
+  border-color: $color-lastfm;
+
+  &:hover {
+    box-shadow: 0 0 2rem 0 $color-lastfm;
+  }
+}
+
+.color-resume {
+  color: $color-green;
+  border-color: $color-green;
+
+  &:hover {
+    box-shadow: 0 0 2rem 0 $color-green;
+  }
+}
+
+h1, h2, p {
+  margin: 0;
+}

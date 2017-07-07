@@ -3,11 +3,10 @@
   "rules": {
     "block-closing-brace-empty-line-before": null,
     "color-named": "never",
-    "color-hex-case": "lower",
+    "color-hex-case": "upper",
     "color-hex-length": long,
     "declaration-block-no-redundant-longhand-properties": true,
     "declaration-block-no-shorthand-property-overrides": true,
-    "declaration-block-properties-order": "alphabetical",
     "declaration-empty-line-before": null,
     "declaration-no-important": true,
     "font-family-name-quotes": "always-where-recommended",

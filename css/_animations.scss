@@ -1,46 +1,26 @@
-@keyframes backgroundMover {
-
-  0% {
-    background-image: repeating-linear-gradient(120deg, $color-pink, $color-pink 45px, $color-blue 45px, $color-blue 90px, $color-yellow 90px, $color-yellow 135px);
-  }
-
-  50% {
-    background-image: repeating-linear-gradient(120deg, $color-yellow, $color-yellow 45px, $color-pink 45px, $color-pink 90px, $color-blue 90px, $color-blue 135px);
-  }
-
-  100% {
-    background-image: repeating-linear-gradient(120deg, $color-blue, $color-blue 45px, $color-yellow 45px, $color-yellow 90px, $color-pink 90px, $color-pink 135px);
-  }
-}
-
 @keyframes bgDisco {
 
-  2% {
-    background-color: $color-blue;
-  }
-
-  48% {
-    background-color: $color-blue;
-  }
-
-  50% {
-    background-color: $color-pink;
-  }
-
-  100% {
-    background-color: $color-pink;
-  }
-}
-
-@keyframes linkPulse {
-
   0% {
-    border: .15em solid $color-blue-dark;
-    color: $color-blue-dark;
+    background-color: $color-green;
+  }
+
+  33% {
+    background-color: $color-green;
+  }
+
+  34% {
+    background-color: $color-pink;
+  }
+
+  66% {
+    background-color: $color-pink;
+  }
+
+  67% {
+    background-color: $color-blue;
   }
 
   100% {
-    border: .15em solid $color-blue;
-    color: $color-blue;
+    background-color: $color-blue;
   }
 }

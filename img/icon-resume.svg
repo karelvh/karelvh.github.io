@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="55px" viewBox="0 0 43 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-resume</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-7.9%" y="-20.0%" width="116.1%" height="140.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.347672935   0 0 0 0 0.917330995   0 0 0 0 0.571947762  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="380" height="150" rx="10"></rect>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-370.000000, -595.000000)">
+            <g id="Work" transform="translate(330.000000, 448.000000)">
+                <g id="Resume" filter="url(#filter-1)" transform="translate(0.000000, 102.000000)">
+                    <g id="Rectangle">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <rect stroke="#59EA92" stroke-width="4" x="2" y="2" width="376" height="146" rx="10"></rect>
+                    </g>
+                    <g id="icon-resume" transform="translate(40.000000, 45.000000)">
+                        <rect id="Rectangle-2" fill="#59EA92" x="0" y="0" width="43" height="55" rx="3"></rect>
+                        <rect id="Rectangle-3" fill="#FFFFFF" x="24.6577281" y="6" width="13.3422719" height="5.7227101"></rect>
+                        <rect id="Rectangle-3-Copy" fill="#FFFFFF" x="24.6577281" y="16.8918048" width="13.3422719" height="5.7227101"></rect>
+                        <rect id="Rectangle-3-Copy-2" fill="#FFFFFF" x="5.67324894" y="30.621864" width="32.3267511" height="5.7227101"></rect>
+                        <circle id="Oval-2" fill="#FFFFFF" cx="12.4679304" cy="11.0321018" r="4"></circle>
+                        <rect id="Rectangle-3-Copy-3" fill="#FFFFFF" x="5.67324894" y="41.3714676" width="21.7186534" height="5.7227101"></rect>
+                        <path d="M5.61907708,18.1983554 C9.68572872,12.0270373 16.0775069,13.08602 19.3167837,18.0083658 C19.3167837,21.4788905 19.3167837,22.9610048 19.3167837,22.4547088 L5.61907708,22.4547088 C5.61907708,22.5188882 5.61907708,21.1001037 5.61907708,18.1983554 Z" id="Path-2" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
