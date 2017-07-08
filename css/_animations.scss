@@ -2,25 +2,46 @@
 
   0% {
     background-color: $color-green;
+    margin-top: 0;
   }
 
-  33% {
+  25% {
     background-color: $color-green;
   }
 
-  34% {
+  26% {
     background-color: $color-pink;
   }
 
-  66% {
+  50% {
     background-color: $color-pink;
+    margin-top: 0;
   }
 
-  67% {
+  51% {
     background-color: $color-blue;
+  }
+
+  75% {
+    background-color: $color-blue;
+  }
+
+  76% {
+    margin-top: 0;
   }
 
   100% {
-    background-color: $color-blue;
+    margin-top: -100vh;
+  }
+}
+
+@keyframes moveUp {
+
+  0% {
+    margin-top: 0;
+  }
+
+  100% {
+    margin-top: -100vh;
   }
 }

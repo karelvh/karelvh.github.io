@@ -1,12 +1,27 @@
 .loading {
-  animation: bgDisco 1000ms;
+  animation-name: bgDisco;
+  animation-duration: 1500ms;
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  // align-items: stretch;
+  flex-direction: column;
+  // flex-wrap: wrap;
+  background: $color-white;
+  padding: 5rem;
+  margin-top: -100vh;
 
-  display: none;
+  div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  img {
+    width: 15rem;
+    height: auto;
+  }
 }
 
 h1, h2 {
@@ -15,7 +30,8 @@ h1, h2 {
 
 .content {
 
-  margin: 10rem 0;
+  margin: 10rem auto;
+  max-width: 84rem;
 
   header {
 
@@ -133,7 +149,8 @@ h1, h2 {
 }
 
 footer {
+  max-width: 84rem;
   font-size: 2.4rem;
   font-weight: 500;
-  margin-bottom: 4rem;
+  margin: 0 auto 4rem;
 }
