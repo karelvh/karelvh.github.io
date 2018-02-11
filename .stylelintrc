@@ -22,7 +22,7 @@
     "selector-list-comma-newline-after": null,
     "selector-max-id": 1,
     "selector-no-qualifying-type": [true, {"ignore": "attribute"}],
-    "selector-max-universal": 0,
+    "selector-max-universal": 1,
     "selector-no-vendor-prefix": true,
     "string-quotes": "single",
     "shorthand-property-no-redundant-values": true,
