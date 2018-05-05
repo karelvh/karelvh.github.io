@@ -5,440 +5,371 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
         <title>Karel Van Haeverbeek</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-        <style type="text/css">
-            @import url(
-            	https://fonts.googleapis.com/css?family=Lato:400,700
-            );
+        <style>
             body {
             	background: #fff;
-            	font-family: Lato, sans-serif;
-            	margin: 0 0 80px;
-            }
-            a {
-            	color: #2ecc71;
-            }
-            a:focus,
-            a:hover {
-            	color: #f1c40f;
-            	text-decoration: none;
-            }
-            p {
-            	line-height: 1.5;
-            	margin: 0;
-            }
-            p + p {
-            	margin-top: 10px;
-            }
-            h1,
-            h2,
-            h3,
-            h4 {
-            	margin-top: 0
-            }
-            section {
-            	margin-top: 30px;
-            }
-            li {
-            	line-height: 1.8;
-            	list-style: none;
-            }
-            li:before {
-            	content: "\f052";
-            	float: left;
-            	font: 13px Octicons;
-            	margin-top: 6px;
-            	margin-left: -20px;
-            	opacity: .1;
-            	position: absolute;
-            }
-            blockquote {
-            	border-left: 5px solid #e7e9ec;
-            	font-size: 14px;
+            	font: 16px 'Open Sans', Helvetica, Arial, sans-serif;
+            	line-height: 1.4;
+            	margin: 0 0;
+            	margin-bottom: 100px;
             }
             em {
-            	color: #95a5a6;
-            	font-weight: normal;
-            	font-style: normal;
+            	color: #999;
             }
-            h4 span:first-child {
-            	color: #000;
-            	font-weight: bold;
-            }
-            .container {
-            	max-width: 750px;
-            	padding: 0 30px;
-            }
-            .col-sm-6 {
-            	margin-bottom: 10px;
-            }
-            .col-sm-12 h4 {
-            	margin-top: 12px; 
-            }
-            .col-sm-12 + .col-sm-12 {
-            	margin-top: 30px;
-            }
-            #header {
-            	background: #f4f6f6;
-            	padding: 50px 0;
-            	margin-bottom: 30px;
-            }
-            #header h2 {
-            	color: #95a5a6;
-            	font-size: 24px;
-            }
-            #content h3 {
-            	color: #f1c40f;
-            	font-size: 26px;
-            	margin-top: -4px;
-            }
-            #content aside {
-            	text-align: right;
-            	padding-right: 30px;
-            }
-            #profiles .network {
-            	text-transform: capitalize;
-            }
-            #work .position,
-            #volunteer .position {
-            	font-weight: bold;
-            	margin-bottom: 8px;
-            }
-            #education .area {
-            	font-weight: bold;
-            }
-            #education .area:before {
-            	content: "\f0d7";
-            	font: 16px Octicons;
-            	margin-right: 6px;
-            }
-            #education .studyType {
-            	margin-left: 25px;
-            }
-            #awards .summary,
-            #publications .summary {
-            	margin-top: 8px;
-            }
-            #publications .website a:before {
-            	content: attr(href);
+            p {
+            	line-height: 1.6;
+            	font-size: 90%;
             }
             
-            @media (min-width: 480px) {
-            	.strike-through {
-            		border-top: 1px solid #f4f6f6;
-            		height: 20px;
-            		margin-top: 12px;
-            		margin-bottom: -2px;
-            		position: relative;
-            	}
-            	.strike-through span,
-            	.strike-through a {
-            		background: #fff;
-            		position: absolute;
-            	}
-            	.strike-through span:first-child {
-            		padding-right: 20px;
-            		margin-top: -12px;
-            	}
-            	.strike-through span + span {
-            		font-size: 14px;
-            		margin-top: -10px;
-            		padding-left: 20px;
-            		right: 0;
-            	}
+            a {
+            	color: #2C85B1;
+            	text-decoration: none;
+            	font-weight: 400;
             }
-            @media (max-width: 768px) {
-            	.col-sm-6:last-child {
-            		margin-bottom: 0px;
-            	}
-            	#content aside {
-            		margin-bottom: 20px;
-            		padding-right: 0;
-            		text-align: left;
-            	}
-            	#publications .website a:before {
-            		content: "View publication";
-            	}
+            ul {
+            	margin-bottom: 0;
             }
-            @media (max-width: 480px) {
-            	h1 {
-            		font-size: 26px;
-            	}
-            	.date {
-            		font-size: 14px;
-            		margin-bottom: 5px;
-            	}
-            	.strike-through span:first-child {
-            		margin-bottom: 7px;
-            	}
-            	.strike-through span {
-            		display: block;
-            	}	
-            	#header {
-            		margin-bottom: 10px;
-            		padding: 40px 0;
-            	}
-            	#actions {
-            		display: none;
-            	}
+            section {
+            	margin: 1em 0 2em;
+            }
+            blockquote {
+            	margin: 0;
+            	margin-bottom: 1em;
+            }
+            #resume {
+            	margin: 2em 2em 2em 2.5em;
+            	max-width: 760px;
+            }
+            
+            /* Resume heading */
+            .heading header { 
+            
+            }
+            
+            .heading header h1 {
+            	font-size: 180%;
+            	margin: 0.5em 0;
+            	font-weight: 600;
+            }
+            
+            .heading header h2 {
+            	font-size: 140%;
+            	margin: 0;
+            	font-weight: 400;
+            }
+            
+            .heading header .contact .detail {
+            	margin: 0 1em 0 0;
+            }
+            
+            .profile {
+            	display: inline-block;
+            	margin: 0 1em 0 0;
+            }
+            
+            .profile strong,
+            .profile span {
+            	display: inline-block;
+            	margin: 0 1em 0 0;
+            }
+            /* section / line breaks */
+            section h2 {
+            	font-size: 140%;
+            	margin: 0 0 1em;
+            	text-transform: uppercase;
+            	color: #BC1B39;
+            	font-weight: 400;
+            }
+            
+            /* Experience items */
+            .item {
+            	margin: 0 0 1em;
+            	padding: 0 0 1em;
+            	border-bottom: 1px solid #F2EBEC;
+            }
+            
+            .item:last-child {
+            	border-bottom: none;
+            }
+            
+            
+            .item header h3 {
+            	margin: 0.2em 1em 0.2em 0;
+            	display: inline-block;
+            	font-weight: 600;
+            }
+            
+            .item header a {
+            	display: inline-block;
+            }
+            
+            .item .position {
+            	font-weight: 600;
+            	font-size: 100%;
+            	margin: 0.2em 1em 0.2em 0;
+            }
+            
+            .item .startDate,
+            .item .endDate {
+            	color: #6B6B6B;
+            }
+            
+            .item .highlights {
+            	list-style: square;
+            	font-size: 90%;
+            }
+            
+            /* skills */
+            #skills .item {
+            	margin: 0.5em 0;
+            	padding: 0 0 0.5em;
+            	font-size: 90%;
+            }
+            
+            #skills .item .name {
+            	font-weight: 600;
+            	display: inline-block;
+            	text-transform: uppercase;
+            	margin: 0 1em 0 0;
+            	width: 23%;
+            	vertical-align: top;
+            }
+            
+            #skills .item .keywords {
+            	display: inline-block;
+            	width: 70%;
+            	vertical-align: top;
+            }
+            
+            /* education */
+            #education .item {
+            	display: inline-block;
+            	vertical-align: top;
+            	width: 49.5%;
+            	border-bottom: 0;
             }
         </style>
+        <style media="print">
+            body { font-size: 12px; }
+        </style>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300'
+        rel='stylesheet' type='text/css'>
     </head>
     
     <body>
-        <header id="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-9 col-sm-push-3">
-                        	<h1>
-						Karel Van Haeverbeek
-					</h1>
+        <div id="resume">
+            <section class="heading">
+                <header>
+                    	<h1>Karel Van Haeverbeek</h1>
 
-                        	<h2>
-						
-					</h2>
+                    <div class="contact">	<span class="detail">
+					<a href="mailto:Karelvanhaeverbeek@gmail.com">Karelvanhaeverbeek@gmail.com</a>
+				</span>
+	<span class="detail">
+					<a href="https://karel.zone">https://karel.zone</a>
+				</span>
+
+                    </div>
+                </header>
+                <p>
+                    <p>I currently live in Belgium. Studying Devine at the Howest in Kortrijk.</p>
+                </p>
+                <div class="profile">	<strong class="network">
+					Github
+				</strong>
+	<span class="username">
+					<a href="https://github.com/karelvh">karelvh</a>
+				</span>
+
+                </div>
+                <div class="profile">	<strong class="network">
+					LinkedIn
+				</strong>
+	<span class="username">
+					<a href="https://www.linkedin.com/in/karel-van-haeverbeek-a4180b114">karelvanhaeverbeek</a>
+				</span>
+
+                </div>
+            </section>
+            <section id="skills">
+                	<h2>Skills</h2>
+
+                <div class="item">
+                    <div class="name">Development</div>
+                    <div class="keywords">CSS, JavaScript (client and server-side), JQuery, PHP, React</div>
+                </div>
+                <div class="item">
+                    <div class="name">Motion Graphics &amp; Video Editing</div>
+                    <div class="keywords">Adobe After Effects, Adobe Premiere, Adobe Audition</div>
+                </div>
+                <div class="item">
+                    <div class="name">UX &amp; Design</div>
+                    <div class="keywords">App design, Website design, Software design</div>
+                </div>
+                <div class="item">
+                    <div class="name">Other</div>
+                    <div class="keywords">Camera drone operator, Basic welding skills, Multiple DAW packages</div>
+                </div>
+            </section>
+            <section class="experience">
+                	<h2>Experience</h2>
+
+                <section class="item">
+                    <header>
+                        	<h3 class="name">Emakers</h3>
+
+                    </header>	<span class="position">
+				Web Dev / UX
+			</span>
+	<span class="startDate">
+				Dec 2017
+			</span>
+	<span class="endDate">
+				- Present
+			</span>
+
+                    <div class="summary">
+                        <p>
+                            <p>Web developer and UXer on multiple projects.</p>
+                        </p>
+                    </div>
+                </section>
+                <section class="item">
+                    <header>
+                        	<h3 class="name">Barco</h3>
+
+                    </header>	<span class="position">
+				Graphics and Motion animator
+			</span>
+	<span class="startDate">
+				Jul 2017
+			</span>
+	<span class="endDate">
+				- Aug 2017
+			</span>
+
+                    <div class="summary">
+                        <p>
+                            <p>Summer job Graphics and Motion animator.</p>
+                        </p>
+                    </div>
+                </section>
+                <section class="item">
+                    <header>
+                        	<h3 class="name">In The Pocket</h3>
+
+                    </header>	<span class="position">
+				Intern
+			</span>
+	<span class="startDate">
+				Feb 2016
+			</span>
+	<span class="endDate">
+				- May 2016
+			</span>
+
+                    <div class="summary">
+                        <p>
+                            <p>Internship web development.</p>
+                        </p>
+                    </div>
+                </section>
+            </section>
+            <section id="education">
+                	<h2>Education</h2>
+
+                <div class="item">
+                    <header>
+                        	<h3 class="name">Howest, University College West Flanders</h3>
+
+                    </header>
+                    <div class="dates">	<span class="startDate">
+					Sep 2016
+				</span>
+	<span class="endDate">
+					- Present
+				</span>
+
+                    </div>
+                    <div class="qualification">	<span class="studyType">
+					Professional Bachelor
+				</span>
+	<span class="area">
+					- Devine
+				</span>
+	<span class="gpa">
+					GPA: 
+				</span>
 
                     </div>
                 </div>
-            </div>
-        </header>
-        <div id="content" class="container">
-            <section id="contact" class="row">
-                <aside class="col-sm-3">
-                    	<h3>Contact</h3>
+                <div class="item">
+                    <header>
+                        	<h3 class="name">Howest, University College West Flanders</h3>
 
-                </aside>
-                <div class="col-sm-9">
-                    <div class="row">
-                        <div class="col-sm-6">	<strong>Email</strong>
+                    </header>
+                    <div class="dates">	<span class="startDate">
+					Sep 2013
+				</span>
+	<span class="endDate">
+					- Jun 2016
+				</span>
 
-                            <div class="email">Karelvanhaeverbeek@gmail.com</div>
-                        </div>
-                        <div class="col-sm-6">	<strong>Website</strong>
+                    </div>
+                    <div class="qualification">	<span class="studyType">
+					Professional Bachelor
+				</span>
+	<span class="area">
+					- New Media and Communication Technology
+				</span>
+	<span class="gpa">
+					GPA: 
+				</span>
 
-                            <div class="website">	<a href="https://karel.zone">https://karel.zone</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <header>
+                        	<h3 class="name">Olv-Vlaanderen, Kortrijk</h3>
 
-                            </div>
-                        </div>
+                    </header>
+                    <div class="dates">	<span class="startDate">
+					Sep 2011
+				</span>
+	<span class="endDate">
+					- Jun 2013
+				</span>
+
+                    </div>
+                    <div class="qualification">	<span class="studyType">
+					High School
+				</span>
+	<span class="area">
+					- Economics-Maths
+				</span>
+
                     </div>
                 </div>
             </section>
-            <section id="about" class="row">
-                <aside class="col-sm-3">
-                    	<h3>About</h3>
+            <section id="languages">
+                	<h2>Languages</h2>
 
-                </aside>
-                <div class="col-sm-9">
-                    <p>I currently live in Belgium. Studying at the Howest in Kortrijk.</p>
-                </div>
-            </section>
-            <section id="profiles" class="row">
-                <aside class="col-sm-3">
-                    	<h3>Profiles</h3>
+                <div class="item">
+                    <div class="language">Dutch</div>
+                    <div class="fluency">	<em>Native speaker</em>
 
-                </aside>
-                <div class="col-sm-9">
-                    <div class="row">
-                        <div class="col-sm-6">	<strong class="network">
-						Github
-					</strong>
-
-                            <div class="username">
-                                <div class="url">	<a href="https://github.com/karelvh">karelvh</a>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">	<strong class="network">
-						LinkedIn
-					</strong>
-
-                            <div class="username">
-                                <div class="url">	<a href="https://www.linkedin.com/in/karel-van-haeverbeek-a4180b114">karelvanhaeverbeek</a>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </section>
-            <section id="work" class="row">
-                <aside class="col-sm-3">
-                    	<h3>Work</h3>
+                <div class="item">
+                    <div class="language">English</div>
+                    <div class="fluency">	<em>Fluent</em>
 
-                </aside>
-                <div class="col-sm-9">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            	<h4 class="strike-through">
-					<span>In The Pocket</span>
-					<span class="date">
-						2016-02-17 — 2016-05-20
-					</span>
-				</h4>
-
-                            <div class="website pull-right">	<a href="https://www.inthepocket.mobi/">https://www.inthepocket.mobi/</a>
-
-                            </div>
-                            <div class="position">Intern</div>
-                            <div class="summary">
-                                <p>Internship web development.</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </section>
-            <section id="education" class="row">
-                <aside class="col-sm-3">
-                    	<h3>Education</h3>
+                <div class="item">
+                    <div class="language">French</div>
+                    <div class="fluency">	<em>Elementary proficiency</em>
 
-                </aside>
-                <div class="col-sm-9">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            	<h4 class="strike-through">
-					<span>Howest, University College West Flanders</span>
-					<span class="date">
-						2016-09-01 — 
-					</span>
-				</h4>
-
-                            <div class="area">Devine</div>
-                            <div class="studyType">Professional Bachelor</div>
-                            	<h4>Courses</h4>
-
-                            <ul class="courses">
-                                <li>Motion 1</li>
-                                <li>Motion 2</li>
-                                <li>Design Principles</li>
-                                <li>Functional Design</li>
-                                <li>Interaction Design 1</li>
-                                <li>Front-end Web development 3</li>
-                                <li>Web app development</li>
-                                <li>Major 1</li>
-                                <li>Major 2</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-12">
-                            	<h4 class="strike-through">
-					<span>Howest, University College West Flanders</span>
-					<span class="date">
-						2013-09-01 — 2016-06-30
-					</span>
-				</h4>
-
-                            <div class="area">New Media and Communication Technology</div>
-                            <div class="studyType">Professional Bachelor</div>
-                            	<h4>Courses</h4>
-
-                            <ul class="courses">
-                                <li>Front-End Web development</li>
-                                <li>Back-End Web development</li>
-                                <li>Graphics and Motion Design</li>
-                                <li>iOS Development</li>
-                                <li>Small Business Project</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-12">
-                            	<h4 class="strike-through">
-					<span>Olv-Vlaanderen, Kortrijk</span>
-					<span class="date">
-						2011-09-01 — 2013-06-30
-					</span>
-				</h4>
-
-                            <div class="area">Economics-Maths</div>
-                            <div class="studyType">High School</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="skills" class="row">
-                <aside class="col-sm-3">
-                    	<h3>Skills</h3>
-
-                </aside>
-                <div class="col-sm-9">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="name">
-                                	<h4>Development</h4>
-
-                            </div>
-                            <ul class="keywords">
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>JQuery</li>
-                                <li>PHP</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="name">
-                                	<h4>Motion Graphics &amp; Video Editing</h4>
-
-                            </div>
-                            <ul class="keywords">
-                                <li>Adobe After Effects</li>
-                                <li>Adobe Premiere</li>
-                                <li>Adobe Audition</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="name">
-                                	<h4>Design</h4>
-
-                            </div>
-                            <ul class="keywords">
-                                <li>Sketch</li>
-                                <li>Adobe Photoshop</li>
-                                <li>Adobe Illustrator</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="name">
-                                	<h4>Other</h4>
-
-                            </div>
-                            <ul class="keywords">
-                                <li>Basic welding skills</li>
-                                <li>Propellerhead Reason</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="languages" class="row">
-                <aside class="col-sm-3">
-                    	<h3>Languages</h3>
-
-                </aside>
-                <div class="col-sm-9">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="language">	<strong>Dutch</strong>
-
-                            </div>
-                            <div class="fluency">Native speaker</div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="language">	<strong>English</strong>
-
-                            </div>
-                            <div class="fluency">Fluent</div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="language">	<strong>French</strong>
-
-                            </div>
-                            <div class="fluency">Elementary proficiency</div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="language">	<strong>German</strong>
-
-                            </div>
-                            <div class="fluency">Elementary proficiency</div>
-                        </div>
                     </div>
                 </div>
             </section>
