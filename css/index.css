@@ -6,7 +6,7 @@
 @import 'fonts';
 
 /* ANIMATIONS */
-@import 'animations';
+/* @import 'animations'; */
 
 /* PAGE STYLING */
 @import 'html-body';
@@ -14,7 +14,7 @@
 @import 'page-index';
 
 /* HACKS like placeholder styling and other stuff that should be easier to do. */
-@import 'hacks';
+/* @import 'hacks'; */
 
 /* DEBUGGING */
 @import 'debug';
