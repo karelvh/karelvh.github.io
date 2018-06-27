@@ -3,18 +3,13 @@
 
 /* variables */
 @import 'variables';
-@import 'fonts';
 
 /* ANIMATIONS */
 /* @import 'animations'; */
 
 /* PAGE STYLING */
 @import 'html-body';
-@import 'page-404';
-@import 'page-index';
-
-/* HACKS like placeholder styling and other stuff that should be easier to do. */
-/* @import 'hacks'; */
+@import 'app';
 
 /* DEBUGGING */
 @import 'debug';

@@ -1,0 +1,9 @@
+{
+  "extends": "devine/react",
+  "globals": {
+    "$": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8
+  }
+}
