@@ -31,8 +31,8 @@
     "imagemin-jpeg-recompress": "^5.1.0",
     "imagemin-webpack-plugin": "^1.5.2",
     "postcss": "^6.0.13",
-    "postcss-cssnext": "^3.1.0",
     "postcss-color-function": "^4.0.1",
+    "postcss-cssnext": "^3.1.0",
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.7",
     "postcss-preset-env": "^5.1.0",
@@ -42,6 +42,7 @@
     "stylelint": "^8.2.0",
     "stylelint-config-devine": "^1.1.4",
     "url-loader": "^0.6.2",
+    "vanilla-tilt": "^1.4.1",
     "webpack": "^3.7.1",
     "webpack-dev-server": "^2.9.3",
     "webpack-merge": "^4.1.0"
