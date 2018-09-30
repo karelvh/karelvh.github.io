@@ -61,7 +61,6 @@ a {
 }
 
 .projects {
-  /* margin-left: 2rem; */
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -98,7 +97,7 @@ a {
     }
   }
 
-  & .fender {
+  & .fender, & .debate {
 
     & video {
       max-width: 30rem;
