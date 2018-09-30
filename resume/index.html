@@ -2,375 +2,380 @@
 <html>
     
     <head>
+        <link href="//fonts.googleapis.com/css?family=Karla:700" rel="stylesheet"
+        type="text/css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-        <title>Karel Van Haeverbeek</title>
+        <title>Karel Van Haeverbeek -</title>
         <style>
+            /*! normalize.css 2012-02-07T12:37 UTC - http://github.com/necolas/normalize.css */article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:hover,a:active{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.75em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}mark{background:#ff0;color:#000}p,pre{margin:1em 0}pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:75%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;*overflow:visible}button[disabled],input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+            
+            /* General, overall styling */
             body {
-            	background: #fff;
-            	font: 16px 'Open Sans', Helvetica, Arial, sans-serif;
-            	line-height: 1.4;
-            	margin: 0 0;
+            	background: #F9F9F9;
+            	color: #333;
+            	font-size: 0.9em;
+            	font-family: sans-serif;
             	margin-bottom: 100px;
             }
+            
             em {
             	color: #999;
             }
+            
             p {
-            	line-height: 1.6;
-            	font-size: 90%;
+            	line-height: 1.75em;
+            	margin: 0;
             }
             
             a {
-            	color: #2C85B1;
-            	text-decoration: none;
-            	font-weight: 400;
+            	color: #e44037;
             }
+            
             ul {
+            	margin-top: 20px;
             	margin-bottom: 0;
             }
-            section {
-            	margin: 1em 0 2em;
+            
+            ul li {
+            	line-height: 1.75em;
             }
+            
             blockquote {
             	margin: 0;
             	margin-bottom: 1em;
             }
-            #resume {
-            	margin: 2em 2em 2em 2.5em;
-            	max-width: 760px;
+            
+            /* End general, overall styling */
+            
+            /* Header name styling */
+            
+            header {
+            	max-width: 700px;
+            	margin: 0 auto;
+            	padding: 0 50px;
             }
             
-            /* Resume heading */
-            .heading header { 
-            
+            h1 {
+            	font-size: 4em;
+            	margin: 100px 0 40px;
+            	color: #e44037;
             }
             
-            .heading header h1 {
-            	font-size: 180%;
-            	margin: 0.5em 0;
-            	font-weight: 600;
+            h2 {
+            	font-size: 3em;
             }
             
-            .heading header h2 {
-            	font-size: 140%;
-            	margin: 0;
-            	font-weight: 400;
+            h3 {
+            	font-size: 1.5em;
             }
             
-            .heading header .contact .detail {
-            	margin: 0 1em 0 0;
+            h1,h2,h3 {
+            	font-family: "Karla", sans-serif;
+            	font-weight: 700;
             }
             
-            .profile {
-            	display: inline-block;
-            	margin: 0 1em 0 0;
+            /* End header name styling */
+            
+            /* Set width of main body of CV */
+            .container {
+            	max-width: 700px;
+            	padding: 0 50px;
+            	margin: 0 auto;
             }
             
-            .profile strong,
-            .profile span {
-            	display: inline-block;
-            	margin: 0 1em 0 0;
-            }
-            /* section / line breaks */
-            section h2 {
-            	font-size: 140%;
-            	margin: 0 0 1em;
-            	text-transform: uppercase;
-            	color: #BC1B39;
-            	font-weight: 400;
-            }
+            /* End */
             
-            /* Experience items */
             .item {
-            	margin: 0 0 1em;
-            	padding: 0 0 1em;
-            	border-bottom: 1px solid #F2EBEC;
+            	line-height: 1.75em;
             }
             
-            .item:last-child {
-            	border-bottom: none;
-            }
-            
-            
-            .item header h3 {
-            	margin: 0.2em 1em 0.2em 0;
+            .item strong {
             	display: inline-block;
-            	font-weight: 600;
+            	min-width: 20%;
             }
             
-            .item header a {
-            	display: inline-block;
+            .item + .item {
+            	margin-top: 20px;
             }
             
-            .item .position {
-            	font-weight: 600;
-            	font-size: 100%;
-            	margin: 0.2em 1em 0.2em 0;
+            section {
+            	padding: 1em 0 4em;
+            	border-top: 1px #E2E2E2 solid;
             }
             
-            .item .startDate,
-            .item .endDate {
-            	color: #6B6B6B;
+            section:after {
+            	display: block;
+            	content: " ";
+            	clear: both;
             }
             
-            .item .highlights {
-            	list-style: square;
-            	font-size: 90%;
+            /* contact specifics */
+            
+            #basics .contact:after {
+            	display: block;
+            	content: " ";
+            	clear: both;
             }
             
-            /* skills */
-            #skills .item {
-            	margin: 0.5em 0;
-            	padding: 0 0 0.5em;
-            	font-size: 90%;
+            #basics .contact .left, #basics .contact .right {
+            	float: none;
+            	width: 100%;
+            }
+            #basics .contact .right .item:first-child {
+            	margin-top: 20px;
             }
             
-            #skills .item .name {
-            	font-weight: 600;
-            	display: inline-block;
-            	text-transform: uppercase;
-            	margin: 0 1em 0 0;
-            	width: 23%;
-            	vertical-align: top;
+            @media all and (min-width: 700px) {
+            	#basics .contact .left {
+            		width: 50%;
+            		float: left;
+            	}
+            	#basics .contact .right {
+            		width: 50%;
+            		float: right;
+            	}
             }
             
-            #skills .item .keywords {
-            	display: inline-block;
-            	width: 70%;
-            	vertical-align: top;
+            /* skill specifics */
+            
+            @media all and (min-width: 700px) {
+            	#skills .item {
+            		width: 30%;
+            		float: left;
+            		margin-top: 0;
+            		margin-left: 5%;
+            	}
+            	#skills .item:nth-of-type(3n+1) {
+            		margin-left: 0;
+            	}
             }
             
-            /* education */
-            #education .item {
-            	display: inline-block;
-            	vertical-align: top;
-            	width: 49.5%;
-            	border-bottom: 0;
+            /* languages specifics */
+            
+            #languages .item strong {
+            	display: block;
+            }
+            
+            @media all and (min-width: 700px) {
+            	#languages .item {
+            		width: 20%;
+            		float: left;
+            		margin-top: 0;
+            		margin-left: 5%;
+            	}
+            	#languages .item:nth-of-type(4n+1) {
+            		margin-left: 0;
+            		display: block;
+            		content: " ";
+            		clear: both;
+            	}
+            }
+            
+            /* interest specifics */
+            
+            @media all and (min-width: 700px) {
+            	#interests .item {
+            		width: 30%;
+            		float: left;
+            		margin-top: 0;
+            		margin-left: 5%;
+            	}
+            	#interests .item:nth-of-type(3n+1) {
+            		margin-left: 0;
+            		display: block;
+            		content: " ";
+            		clear: both;
+            	}
             }
         </style>
-        <style media="print">
-            body { font-size: 12px; }
-        </style>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300'
-        rel='stylesheet' type='text/css'>
     </head>
     
     <body>
-        <div id="resume">
-            <section class="heading">
-                <header>
-                    	<h1>Karel Van Haeverbeek</h1>
+        <header>
+            	<h1>Karel Van Haeverbeek</h1>
 
-                    <div class="contact">	<span class="detail">
-					<a href="mailto:Karelvanhaeverbeek@gmail.com">Karelvanhaeverbeek@gmail.com</a>
-				</span>
-	<span class="detail">
-					<a href="https://karel.zone">https://karel.zone</a>
-				</span>
+        </header>
+        <div id="content" class="container">
+            <section id="basics">
+                <div class="summary">
+                    	<h3>About</h3>
 
-                    </div>
-                </header>
-                <p>
-                    <p>Currently living in Belgium. Studying Devine at the Howest in Kortrijk.</p>
-                </p>
-                <div class="profile">	<strong class="network">
-					Github
-				</strong>
-	<span class="username">
-					<a href="https://github.com/karelvh">karelvh</a>
-				</span>
-
+                    <p>Born February 13th, 1994. Developed an interest in technology and solving
+                        problems from a young age (by breaking and fixing my old pc and devices).
+                        Currently living, studying and working in Belgium.</p>
                 </div>
-                <div class="profile">	<strong class="network">
-					LinkedIn
-				</strong>
-	<span class="username">
-					<a href="https://www.linkedin.com/in/karel-van-haeverbeek-a4180b114">karelvanhaeverbeek</a>
-				</span>
+                <div class="contact">
+                    	<h3>Contact</h3>
 
+                    <div class="left">
+                        <div class="item website">	<strong>Website</strong>
+	<a href="https://karel.zone">https://karel.zone</a>
+
+                        </div>
+                        <div class="item email">	<strong>Email</strong>
+	<a href="mailto:Karelvanhaeverbeek@gmail.com">Karelvanhaeverbeek@gmail.com</a>
+
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="item">	<strong>
+						Github
+					</strong>
+	<a href="https://github.com/karelvh">
+						karelvh
+					</a>
+
+                        </div>
+                        <div class="item">	<strong>
+						LinkedIn
+					</strong>
+	<a href="https://www.linkedin.com/in/karel-van-haeverbeek-a4180b114">
+						karelvanhaeverbeek
+					</a>
+
+                        </div>
+                        <div class="item">	<strong>
+						Behance
+					</strong>
+	<a href="https://www.behance.net/karelvanha04ff">
+						karelvanha04ff
+					</a>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="work">
+                	<h2>Work</h2>
+
+                <div class="item">
+                    	<h3>Emakers</h3>
+
+                    <p class="details">Web Dev / UX
+                        <br />2017-12-12 - present
+                        <br />	<a href="https://www.emakers.be/en/">https://www.emakers.be/en/</a>
+
+                    </p>
+                    <p class="summary">UX and Web developer on multiple projects.</p>
+                </div>
+                <div class="item">
+                    	<h3>Barco</h3>
+
+                    <p class="details">Graphics and Motion animator
+                        <br />2017-07-10 - 2017-08-04
+                        <br />	<a href="https://www.barco.com/en/">https://www.barco.com/en/</a>
+
+                    </p>
+                    <p class="summary">Summer job Graphics and Motion animator.</p>
+                </div>
+                <div class="item">
+                    	<h3>In The Pocket</h3>
+
+                    <p class="details">Intern
+                        <br />2016-02-17 - 2016-05-20
+                        <br />	<a href="https://www.inthepocket.mobi/">https://www.inthepocket.mobi/</a>
+
+                    </p>
+                    <p class="summary">Internship web development.</p>
+                </div>
+            </section>
+            <section id="education">
+                	<h2>Education</h2>
+
+                <div class="item">
+                    	<h3>Howest, University College West Flanders</h3>
+
+                    <p class="details">Devine
+                        <br />2016-09-01 - present
+                        <br />
+                    </p>
+                    <ul class="courses">
+                        <li>Motion design</li>
+                        <li>App and website design</li>
+                        <li>UX</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    	<h3>Howest, University College West Flanders</h3>
+
+                    <p class="details">New Media and Communication Technology
+                        <br />2013-09-01 - 2016-06-30
+                        <br />
+                    </p>
+                    <ul class="courses">
+                        <li>Front-End Web development</li>
+                        <li>Back-End Web development</li>
+                        <li>iOS Development</li>
+                        <li>Small Business Project</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    	<h3>Olv-Vlaanderen, Kortrijk</h3>
+
+                    <p class="details">Economics-Maths
+                        <br />2007-09-01 - 2013-06-30
+                        <br />
+                    </p>
                 </div>
             </section>
             <section id="skills">
                 	<h2>Skills</h2>
 
                 <div class="item">
-                    <div class="name">Development</div>
-                    <div class="keywords">CSS, JavaScript (client and server-side), PHP</div>
+                    	<h3>Development</h3>
+
+                    <ul class="keywords">
+                        <li>CSS</li>
+                        <li>JavaScript (client and server-side)</li>
+                        <li>PHP</li>
+                    </ul>
                 </div>
                 <div class="item">
-                    <div class="name">Motion Graphics &amp; Video Editing</div>
-                    <div class="keywords">Adobe After Effects, Adobe Premiere, Adobe Audition, Final Cut Pro X</div>
+                    	<h3>Motion Graphics &amp; Video Editing</h3>
+
+                    <ul class="keywords">
+                        <li>Adobe After Effects</li>
+                        <li>Adobe Premiere</li>
+                        <li>Adobe Audition</li>
+                        <li>Final Cut Pro X</li>
+                    </ul>
                 </div>
                 <div class="item">
-                    <div class="name">UX &amp; Design</div>
-                    <div class="keywords">App design, Website design, Software design</div>
+                    	<h3>UX &amp; Design</h3>
+
+                    <ul class="keywords">
+                        <li>(Web)app design</li>
+                        <li>(Web)app UX</li>
+                        <li>Sketch</li>
+                        <li>Figma</li>
+                        <li>Invision Studio</li>
+                    </ul>
                 </div>
                 <div class="item">
-                    <div class="name">Other</div>
-                    <div class="keywords">Camera drone operator, Basic welding skills, Multiple DAW packages</div>
-                </div>
-            </section>
-            <section class="experience">
-                	<h2>Experience</h2>
+                    	<h3>Other</h3>
 
-                <section class="item">
-                    <header>
-                        	<h3 class="name">Emakers</h3>
-
-                    </header>	<span class="position">
-				Web Dev / UX
-			</span>
-	<span class="startDate">
-				Dec 2017
-			</span>
-	<span class="endDate">
-				- Present
-			</span>
-
-                    <div class="summary">
-                        <p>
-                            <p>Web developer and UXer on multiple projects.</p>
-                        </p>
-                    </div>
-                </section>
-                <section class="item">
-                    <header>
-                        	<h3 class="name">Barco</h3>
-
-                    </header>	<span class="position">
-				Graphics and Motion animator
-			</span>
-	<span class="startDate">
-				Jul 2017
-			</span>
-	<span class="endDate">
-				- Aug 2017
-			</span>
-
-                    <div class="summary">
-                        <p>
-                            <p>Summer job Graphics and Motion animator.</p>
-                        </p>
-                    </div>
-                </section>
-                <section class="item">
-                    <header>
-                        	<h3 class="name">In The Pocket</h3>
-
-                    </header>	<span class="position">
-				Intern
-			</span>
-	<span class="startDate">
-				Feb 2016
-			</span>
-	<span class="endDate">
-				- May 2016
-			</span>
-
-                    <div class="summary">
-                        <p>
-                            <p>Internship web development.</p>
-                        </p>
-                    </div>
-                </section>
-            </section>
-            <section id="education">
-                	<h2>Education</h2>
-
-                <div class="item">
-                    <header>
-                        	<h3 class="name">Howest, University College West Flanders</h3>
-
-                    </header>
-                    <div class="dates">	<span class="startDate">
-					Sep 2016
-				</span>
-	<span class="endDate">
-					- Present
-				</span>
-
-                    </div>
-                    <div class="qualification">	<span class="studyType">
-					Professional Bachelor
-				</span>
-	<span class="area">
-					- Devine
-				</span>
-	<span class="gpa">
-					GPA: 
-				</span>
-
-                    </div>
-                </div>
-                <div class="item">
-                    <header>
-                        	<h3 class="name">Howest, University College West Flanders</h3>
-
-                    </header>
-                    <div class="dates">	<span class="startDate">
-					Sep 2013
-				</span>
-	<span class="endDate">
-					- Jun 2016
-				</span>
-
-                    </div>
-                    <div class="qualification">	<span class="studyType">
-					Professional Bachelor
-				</span>
-	<span class="area">
-					- New Media and Communication Technology
-				</span>
-	<span class="gpa">
-					GPA: 
-				</span>
-
-                    </div>
-                </div>
-                <div class="item">
-                    <header>
-                        	<h3 class="name">Olv-Vlaanderen, Kortrijk</h3>
-
-                    </header>
-                    <div class="dates">	<span class="startDate">
-					Sep 2011
-				</span>
-	<span class="endDate">
-					- Jun 2013
-				</span>
-
-                    </div>
-                    <div class="qualification">	<span class="studyType">
-					High School
-				</span>
-	<span class="area">
-					- Economics-Maths
-				</span>
-
-                    </div>
+                    <ul class="keywords">
+                        <li>Camera drone operator</li>
+                        <li>Basic welding skills</li>
+                        <li>Multiple DAW packages</li>
+                    </ul>
                 </div>
             </section>
             <section id="languages">
                 	<h2>Languages</h2>
 
-                <div class="item">
-                    <div class="language">Dutch</div>
-                    <div class="fluency">	<em>Native speaker</em>
+                <div class="item">	<strong>Dutch</strong>
+	<em>Native speaker</em>
 
-                    </div>
                 </div>
-                <div class="item">
-                    <div class="language">English</div>
-                    <div class="fluency">	<em>Fluent</em>
+                <div class="item">	<strong>English</strong>
+	<em>Fluent</em>
 
-                    </div>
                 </div>
-                <div class="item">
-                    <div class="language">French</div>
-                    <div class="fluency">	<em>Elementary proficiency</em>
+                <div class="item">	<strong>French</strong>
+	<em>Elementary proficiency</em>
 
-                    </div>
                 </div>
             </section>
         </div>

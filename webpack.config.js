@@ -89,6 +89,11 @@ const commonConfig = merge([
       new HtmlWebpackPlugin({
         template: `./src/index.html`
       }),
+      new HtmlWebpackPlugin({
+        filename: `about.html`,
+        template: `./src/about.html`
+      }),
+      // TODO add htmlwebpackplugin for all pages
       new BrowserSyncPlugin(
         // BrowserSync options
         {

@@ -1,9 +1,8 @@
 :root {
-  --color-white: #fcfaf3;
+  --color-white: #fffef8;
   --color-black: #2c3e50;
   --color-purple: #735ef5;
   --color-purple-shadow: rgba(115, 94, 245, .4);
-  --color-green: #59ea92;
   --break-medium: 1024px;
   --font-size-medium: 16px;
   --font-size-small: 13px;

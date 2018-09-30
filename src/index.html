@@ -32,42 +32,51 @@
   </script>
 </head>
 <body>
-  <section class="content">
-    <header>
-      <h1 class="hide">Karel's personal site</h1>
-    </header>
-    <section class="section-welcome section-content">
-      <h2 class="hide">welcome</h2>
-      <!-- <div> -->
-      <!-- <div> -->
-        <p>Hi, I'm Karel</p>
-        <img src="assets/img/avatar.png" alt="picture of me" height="101" width="102">
-      <!-- </div> -->
-        <p>I do UX & front-end web stuff.</p>
-      <!-- </div> -->
-    </section>
-    <section class="section-links">
-      <h2 class="hide">links</h2>
-      <!-- <p>View my portfolio on <a rel="noopener noreferrer" target="_blank" href="https://www.behance.net/karelvanha04ff">Behance</a>
-        <img src="assets/svg/arrow.svg" alt="arrow">
-      </p> -->
-      <p><a rel="noopener noreferrer" target="_blank" href="https://www.behance.net/karelvanha04ff">View my portfolio on <span>Behance</span> <img src="assets/svg/arrow.svg" alt="arrow"></a></p>
-      <!-- <p>Scroll through my code on <a rel="noopener noreferrer" target="_blank" href="https://github.com/karelvh">Github</a>
-        <img src="assets/svg/arrow.svg" alt="arrow">
-      </p> -->
-      <p><a rel="noopener noreferrer" target="_blank" href="https://github.com/karelvh">Scroll through my code on <span>Github</span> <img src="assets/svg/arrow.svg" alt="arrow"></a></p>
-      <p>View my resume on <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/karel-van-haeverbeek-a4180b114/">LinkedIn</a> or <a rel="noopener noreferrer" target="_blank" href="/resume/">here</a>
-        <img src="assets/svg/arrow.svg" alt="arrow">
-      </p>
-    </section>
-    <section class="section-contact section-content">
-      <h2 class="hide">get in touch</h2>
-      <!-- <p><a rel="noopener noreferrer" target="_blank" href="mailto:hello@karel.zone">Get in touch</a>
-        <img src="assets/svg/arrow.svg" alt="arrow">
-      </p> -->
-      <p><a rel="noopener noreferrer" target="_blank" href="mailto:hello@karel.zone">Get in touch <img src="assets/svg/arrow.svg" alt="arrow"></a></p>
-    </section>
+  <header>
+    <h1 class="hide">Karel's personal site</h1>
+    <nav>
+      <a class="left" rel="noopener noreferrer" href="/"><img class="home-avi" src="assets/img/karel.png" alt="arrow"></a>
+      <div class="right">
+        <a class="semi-bold" rel="noopener noreferrer" href="#projects">Projects</a>
+        <a class="semi-bold" rel="noopener noreferrer" href="/about.html">About</a>
+      </div>
+    </nav>
+    <div class="intro">
+      <p><span class="bold">Hello! I'm <span class="purple">Karel Van Haeverbeek</span>,</br></span> <span class="semi-bold">a Ux-er and front-end developer from Belgium. Currently looking for an internship.</span></p>
+      <div class="links">
+        <a rel="noopener noreferrer" href="mailto:hello@karel.zone">Contact me</a>
+        <a rel="noopener noreferrer" href="/resume/">Resume</a>
+      </div>
+    </div>
+  </header>
+  <section class=projects id="projects">
+    <h2 class="semi-bold">Projects</h2>
+    <a class="vertigo" href="/vertigo.html">
+      <video src="/assets/vid/vertigo.mp4" autoplay loop poster="/assets/img/vertigo-header.jpg"></video>
+      <h3>Vertigo</h3>
+    </a>
+    <a class="pmr" href="/pmr.html">
+      <video src="/assets/vid/pmr.mp4" autoplay loop poster="/assets/img/pmr-header.jpg"></video>
+      <h3>Pimp My Ride</h3>
+    </a>
+    <a class="fender" href="/fender.html">
+      <video src="/assets/vid/fender.mp4" autoplay loop poster="/assets/img/fender-header.jpg"></video>
+      <h3>Fender App</h3>
+    </a>
+    <a class="debate" href="/debate.html">
+      <video src="/assets/vid/debate.mp4" autoplay loop poster="/assets/img/debate-header.jpg"></video>
+      <h3>Debate App</h3>
+    </a>
+    <a class="babeleir" href="/babeleir.html">
+      <img src="/assets/img/babeleir-header.jpg" alt="babeleir de bretagne header image">
+      <h3>Babeleir de Bretagne</h3>
+    </a>
+
+
+    </video>
   </section>
+
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
