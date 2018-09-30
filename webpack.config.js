@@ -109,6 +109,10 @@ const commonConfig = merge([
         filename: `debate.html`,
         template: `./src/debate.html`
       }),
+      new HtmlWebpackPlugin({
+        filename: `babeleir.html`,
+        template: `./src/babeleir.html`
+      }),
       // TODO add htmlwebpackplugin for all pages
       new BrowserSyncPlugin(
         // BrowserSync options
