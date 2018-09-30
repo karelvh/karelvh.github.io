@@ -120,6 +120,11 @@ a {
   padding: 0 2rem;
   min-height: calc(90vh - 11rem - 4.2rem - 2rem);
 
+  & .me {
+    display: block;
+    margin: 0 auto 4rem;
+  }
+
   & p {
     margin-bottom: 3rem;
   }
@@ -155,7 +160,6 @@ footer {
 
     & a {
       display: block;
-      /* font-size: 1.2rem; */
     }
   }
 }
