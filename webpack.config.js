@@ -101,6 +101,14 @@ const commonConfig = merge([
         filename: `pmr.html`,
         template: `./src/pmr.html`
       }),
+      new HtmlWebpackPlugin({
+        filename: `fender.html`,
+        template: `./src/fender.html`
+      }),
+      new HtmlWebpackPlugin({
+        filename: `debate.html`,
+        template: `./src/debate.html`
+      }),
       // TODO add htmlwebpackplugin for all pages
       new BrowserSyncPlugin(
         // BrowserSync options

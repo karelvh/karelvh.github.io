@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="29px" height="12px" viewBox="0 0 29 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>arrow@1x@1x</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Project" transform="translate(-20.000000, -99.000000)">
-            <g id="arrow@1x" transform="translate(34.000000, 104.890625) scale(-1, 1) translate(-34.000000, -104.890625) translate(20.000000, 98.890625)">
-                <path d="M20.6038739,6.20350789 L0.5,6.20350789" id="Shape" stroke="#323232" stroke-width="3" stroke-linecap="square"></path>
-                <polygon id="Shape" fill="#323232" fill-rule="nonzero" points="27.7911813 5.95350789 19.3805495 11.5605957 19.3805495 0.346420034"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg height="12" viewBox="0 0 29 12" width="29" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" transform="matrix(-1 0 0 1 28 -.109375)"><path d="m20.6038739 6.20350789h-20.1038739" stroke="#323232" stroke-linecap="square" stroke-width="3"/><path d="m27.7911813 5.95350789-8.4106318 5.60708781v-11.21417567z" fill="#323232" fill-rule="nonzero"/></g></svg>

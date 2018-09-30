@@ -200,6 +200,11 @@ footer {
       margin-right: 5rem;
     }
 
+    & .fender-image, & .debate-header-image {
+      max-width: 40rem;
+      width: 90vw;
+    }
+
     & .description {
       display: flex;
       flex-wrap: wrap;
