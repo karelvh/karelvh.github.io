@@ -96,7 +96,7 @@ a {
 
   & .pmr {
 
-    & video {
+    & img {
       max-width: 80rem;
       width: 90vw;
     }
