@@ -93,6 +93,10 @@ const commonConfig = merge([
         filename: `about.html`,
         template: `./src/about.html`
       }),
+      new HtmlWebpackPlugin({
+        filename: `vertigo.html`,
+        template: `./src/vertigo.html`
+      }),
       // TODO add htmlwebpackplugin for all pages
       new BrowserSyncPlugin(
         // BrowserSync options

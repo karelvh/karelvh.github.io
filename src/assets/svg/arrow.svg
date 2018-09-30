@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="54px" height="21px" viewBox="0 0 54 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>arrow@1x</title>
+<svg width="29px" height="12px" viewBox="0 0 29 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow@1x@1x</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Design-🎨" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop" transform="translate(-699.000000, -456.000000)">
-            <g id="Behance" transform="translate(137.500000, 427.639556)">
-                <g id="arrow" transform="translate(563.713453, 28.000000)">
-                    <path d="M39.5,10.6343198 L0.5,10.6343198" id="Line" stroke="#59EA92" stroke-width="5" stroke-linecap="square"></path>
-                    <polygon id="Triangle" fill="#59EA92" transform="translate(43.600503, 10.634320) rotate(90.000000) translate(-43.600503, -10.634320) " points="43.600503 3.13431976 53.600503 18.1343198 33.600503 18.1343198"></polygon>
-                </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Project" transform="translate(-20.000000, -99.000000)">
+            <g id="arrow@1x" transform="translate(34.000000, 104.890625) scale(-1, 1) translate(-34.000000, -104.890625) translate(20.000000, 98.890625)">
+                <path d="M20.6038739,6.20350789 L0.5,6.20350789" id="Shape" stroke="#323232" stroke-width="3" stroke-linecap="square"></path>
+                <polygon id="Shape" fill="#323232" fill-rule="nonzero" points="27.7911813 5.95350789 19.3805495 11.5605957 19.3805495 0.346420034"></polygon>
             </g>
         </g>
     </g>

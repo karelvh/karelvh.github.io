@@ -14,6 +14,11 @@ h2 {
   font-size: 2rem;
 }
 
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -160,6 +165,110 @@ footer {
 
     & a {
       display: block;
+    }
+  }
+}
+
+.project {
+  min-height: calc(90vh - 11rem - 4.2rem - 2rem);
+  margin: 7rem auto;
+  padding: 0 2rem;
+
+  & .back {
+    text-decoration: none;
+    margin-bottom: 2rem;
+    display: inline-block;
+
+    & img {
+      margin-right: 1rem;
+    }
+  }
+
+  & .content {
+
+    & .header-image {
+      box-shadow: 0 0 2rem 0 rgba(50, 50, 50, .18);
+      max-width: 70rem;
+      width: 90vw;
+      margin-right: 4rem;
+    }
+
+    & .extra-image {
+      box-shadow: 0 0 2rem 0 rgba(50, 50, 50, .18);
+      max-width: 50rem;
+      width: 90vw;
+      margin-right: 5rem;
+    }
+
+    & .description {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+
+      & p {
+        margin-top: 0;
+      }
+
+      & .left, & .right {
+        max-width: 40rem;
+        margin-right: 30rem;
+      }
+
+      & .team, & .brief {
+
+        & h3 {
+          margin-top: 0;
+        }
+      }
+
+      & .link-to-project {
+        color: var(--color-purple);
+        margin-bottom: 2rem;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .project {
+
+    & .content {
+
+      & .description .left, & .description .right {
+        margin-right: 20rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .project {
+
+    & .content {
+
+      & .header-image, & .extra-image {
+        margin-right: 0;
+      }
+
+      & .description .left, & .description .right {
+        margin-right: 10rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .project {
+
+    & .content {
+
+      & .description .left, & .description .right {
+        margin-right: 1rem;
+      }
     }
   }
 }

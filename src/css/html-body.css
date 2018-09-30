@@ -22,7 +22,7 @@ body {
 }
 
 ::selection {
-  background: black;
+  background: rgba(0, 111, 255, .2);
 }
 
 .hide {
