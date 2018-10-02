@@ -233,11 +233,46 @@ footer {
       }
     }
   }
+
+  & .back, & .content {
+    margin-left: 15vw;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+
+  .project {
+
+    & .back, & .content {
+      margin-left: 10vw;
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+
+  .project {
+
+    & .back, & .content {
+      margin-left: 5vw;
+    }
+
+    & .content {
+
+      & .description .left, & .description .right {
+        margin-right: 15rem;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
 
   .project {
+
+    & .back, & .content {
+      margin-left: 0vw;
+    }
 
     & .content {
 
