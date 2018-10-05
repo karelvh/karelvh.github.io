@@ -25,6 +25,10 @@ a {
   font-weight: 500;
 }
 
+.underlined {
+  border-bottom: .2rem solid var(--color-black);
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -41,8 +45,8 @@ nav {
       transition: all .5s;
     }
 
-    &:first-of-type:hover {
-      border-bottom: .2rem solid var(--color-white);
+    &:first-of-type {
+      /* border-bottom: .2rem solid var(--color-white); */
     }
   }
 
@@ -73,7 +77,7 @@ nav {
 }
 
 .intro {
-  max-width: 37rem;
+  max-width: 44rem;
   margin: 7rem auto;
   padding: 0 2rem;
 
