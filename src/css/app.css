@@ -87,10 +87,6 @@ nav {
 
   & .links {
 
-    & a {
-      border-bottom: .2rem solid var(--color-black);
-    }
-
     & a:first-of-type {
       margin-right: 2rem;
     }
